@@ -1,0 +1,32 @@
+---
+title: "上下文策略"
+title-en: "上下文策略"
+description: ""
+description-en: ""
+date: 2026-07-01
+date-sort: "2026-07-01T21:43:00+08:00"
+date-display: "2026.07.01 21:43"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-07-01-21-43"
+source: "x"
+source-url-original: null
+original-published-at: "2026-07-01 21:43"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+你用子代理管理它的上下文。
+
+如果没达到你的目标，它就要学会调整它的上下文策略。能调整的策略还包括计算资源。本机资源和云服务资源，都应该用统一 API 统计。
+
+上下文不是把所有东西塞进去。上下文组装是行动前的建模：现在要做什么？需要哪些记忆？哪些资料？哪些工具状态？哪些用户偏好？哪些空间对象？
+
+如果上下文错了，输出再聪明也会走偏。
+
+<!-- wordm:lang end -->

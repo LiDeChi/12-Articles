@@ -1,0 +1,32 @@
+---
+title: "空间连续性"
+title-en: "空间连续性"
+description: ""
+description-en: ""
+date: 2026-06-21
+date-sort: "2026-06-21T22:25:00+08:00"
+date-display: "2026.06.21 22:25"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-06-21-22-25"
+source: "x"
+source-url-original: null
+original-published-at: "2026-06-21 22:25"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+它的经验流唯一要获取什么信息，它在做什么决定。为了认知稳定性，需要空间连续性。
+
+一个空间如何开启、退出、销毁、重建，它的搭建过程，本身就是大问题。
+
+我在某个空间的时候，它还能做别的事情，能在关键时候告诉我其他地方有事了。书房是锚点，其他空间是展开。每个空间都应该能回到书房，或者在书房中留下痕迹。
+
+空间不是孤岛，而是思维路径。进入一个空间，就像进入一个想法的内部结构。
+
+<!-- wordm:lang end -->

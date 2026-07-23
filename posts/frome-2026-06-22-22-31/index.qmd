@@ -1,0 +1,34 @@
+---
+title: "一个主体"
+title-en: "一个主体"
+description: ""
+description-en: ""
+date: 2026-06-22
+date-sort: "2026-06-22T22:31:00+08:00"
+date-display: "2026.06.22 22:31"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-06-22-22-31"
+source: "x"
+source-url-original: null
+original-published-at: "2026-06-22 22:31"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+还是要个主体。
+
+Agent 自己也在探索，它又分出余力来跟我娱乐。系统很庞杂。我控制一个主体，主体控制一支团队。
+
+先从简单开始，别想那么多，就是一个主体，它思维比较活络。
+
+子代理不完全隔绝。它们可能被广播了一些信息。比如我去完一个宋代空间游历回来，书房里的子 Agent 会穿上宋朝服装来上课，纯粹是一种乐趣，也不为别的。
+
+主体连续，投射多变。这样产品才稳。
+
+<!-- wordm:lang end -->

@@ -1,0 +1,44 @@
+---
+title: "作品集不是截图墙：如何讲清一个项目的决策逻辑"
+title-en: "A Portfolio Is Not a Screenshot Wall: Showing Decision Logic Clearly"
+description: "优秀作品集应该回答“为什么这么做”，而不只是“做了什么”。"
+description-en: "A strong portfolio should answer why decisions were made, not only what was shipped."
+date: 2025-12-30
+date-sort: "2025-12-30T12:00:00+08:00"
+date-display: "2025.12.30"
+category: "作品集方法"
+category-en: "Portfolio"
+categories:
+  - "作品集方法"
+article-id: "blog-portfolio-thinking"
+source: "site"
+source-url-original: null
+original-published-at: null
+note: "展示结果很容易，展示决策过程才有说服力。"
+note-en: "Results are easy to display; decision process is what builds credibility."
+---
+
+<!-- wordm:lang zh -->
+
+我在整理作品集时，优先保留四类证据：目标定义、关键约束、方案权衡和上线反馈。这样读者可以快速理解项目中的真实决策环境。
+
+同一个功能在不同团队条件下会有完全不同的实现路径。作品集最有价值的部分，是你如何在资源有限的情况下做取舍。
+
+因此我把每个项目都拆成可独立访问的子域名页面，既能单独传播，也方便持续迭代和补充复盘。
+
+<!-- wordm:lang end -->
+
+<details class="article-translation">
+<summary>English translation</summary>
+
+<!-- wordm:lang en -->
+
+When curating portfolio entries, I prioritize four evidence types: objective definition, hard constraints, option trade-offs, and post-launch feedback. This helps readers understand the actual decision environment quickly.
+
+The same feature can take very different paths under different team constraints. The most valuable part of a portfolio is how you made trade-offs under limited resources.
+
+That is why each project is published as an independently accessible subdomain page, making it easy to share, iterate, and append retrospective insights over time.
+
+<!-- wordm:lang end -->
+
+</details>

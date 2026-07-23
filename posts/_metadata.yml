@@ -1,0 +1,10 @@
+author: "李德驰"
+toc: true
+number-sections: true
+title-block-banner: false
+
+format:
+  html:
+    code-fold: true
+
+license: "CC BY-NC-ND"

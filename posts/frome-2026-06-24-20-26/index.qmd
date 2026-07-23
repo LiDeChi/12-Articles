@@ -1,0 +1,32 @@
+---
+title: "云与本机"
+title-en: "云与本机"
+description: ""
+description-en: ""
+date: 2026-06-24
+date-sort: "2026-06-24T20:26:00+08:00"
+date-display: "2026.06.24 20:26"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-06-24-20-26"
+source: "x"
+source-url-original: null
+original-published-at: "2026-06-24 20:26"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+云端再厉害，经历还是得在你自己的机器上。
+
+当然，极限情况是所有数据都在云上，本机只负责渲染。这个事情不太可能。那样人类也离灭亡不远，没有差异化，就像所有资源都集中在老大哥那里。
+
+个人 Agent 的经验应该在本机形成，至少本机要保留关键记忆、权限和连续性。云端可以提供算力，本机提供归属。
+
+FroMe 要能利用云，也要能意识到本机资源、数据边界和个人机器网络。
+
+<!-- wordm:lang end -->

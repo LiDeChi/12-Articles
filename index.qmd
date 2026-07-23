@@ -1,0 +1,18 @@
+---
+title: "文章"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  feed:
+    type: partial
+  filter-ui: true
+  sort-ui: false
+  page-size: 20
+page-layout: full
+---
+
+这里记录我关于数学、人工智能、Agent、强化学习和认知科学的研究与思考。
+
+长文、研究札记与已经形成明确问题的草稿，都以独立文章目录保存；主题关系由分类连接，不再依赖越来越深的文件夹。

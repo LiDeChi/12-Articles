@@ -1,0 +1,32 @@
+---
+title: "白板第一"
+title-en: "白板第一"
+description: ""
+description-en: ""
+date: 2026-07-06
+date-sort: "2026-07-06T23:17:00+08:00"
+date-display: "2026.07.06 23:17"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-07-06-23-17"
+source: "x"
+source-url-original: null
+original-published-at: "2026-07-06 23:17"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+第一版先做白板。
+
+白板是最小可行的空间化认知表面。Agent 在白板上写、画、贴卡片、连线、生成小图、展开资料。
+
+白板上每个东西都应该有语义，不是纯 SVG。卡片背后要绑定文件、记忆、操作、来源、版本、可进入空间。
+
+如果白板只是画布，就会变成普通工具。如果白板是 Agent 的外部工作记忆，它就会成为 FroMe 的心智窗口。
+
+<!-- wordm:lang end -->

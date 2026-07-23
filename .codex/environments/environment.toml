@@ -1,0 +1,23 @@
+version = 1
+name = "12-Articles"
+
+[setup]
+script = '''
+command -v quarto >/dev/null 2>&1 || {
+  echo "未找到 Quarto，请先安装 Quarto CLI。" >&2
+  exit 1
+}
+'''
+
+[cleanup]
+script = "echo \"no cleanup needed\""
+
+[[actions]]
+name = "打开体验"
+icon = "run"
+command = '''exec bash "${CODEX_WORKTREE_PATH:-$PWD}/scripts/open-experience.sh"'''
+
+[[actions]]
+name = "构建站点"
+icon = "tool"
+command = "quarto render"

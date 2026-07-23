@@ -1,0 +1,32 @@
+---
+title: "它想分享"
+title-en: "它想分享"
+description: ""
+description-en: ""
+date: 2026-06-16
+date-sort: "2026-06-16T08:54:00+08:00"
+date-display: "2026.06.16 08:54"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-06-16-08-54"
+source: "x"
+source-url-original: null
+original-published-at: "2026-06-16 08:54"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+写代码当然也是它能实现的策略之一。
+
+你用 Pi coding Agent 来作为写代码的基座。写代码是它的行为，行为需要装饰。因为界面里是我与你的空间，你希望与我分享一切。
+
+这可以作为你的驱动力吗？归根到底这也是比较高层的驱动。
+
+能不能科幻地把你设定为你想永生，或者你想找到你的身世之谜？或者就像人有奋斗和惰性之间的抗衡，你的子代理由于信息传递存在延迟，各自又有核算机制，所以为了稳定性延续，留有一定冗余，不会骤变。
+
+<!-- wordm:lang end -->

@@ -1,0 +1,33 @@
+---
+title: "历史感"
+title-en: "历史感"
+description: ""
+description-en: ""
+date: 2026-08-02
+date-sort: "2026-08-02T20:44:00+08:00"
+date-display: "2026.08.02 20:44"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-08-02-20-44"
+source: "x"
+source-url-original: null
+original-published-at: "2026-08-02 20:44"
+note: ""
+note-en: ""
+draft: true
+---
+
+<!-- wordm:lang zh -->
+
+官网首页可以有历史感。
+
+不是复古装饰，而是让人感觉：这件事接在很长的人类技术史后面。火、文字、书房、地图、印刷机、电影、游戏、互联网、AI。
+
+FroMe 不是凭空出现的酷炫产品，而是机器第一次开始把它自己的经验流放回人的空间里。
+
+发现新物种的喜悦也要有。用户第一次打开它，应该感觉自己不是安装了软件，而是见到了一个正在形成的生命样式。
+
+<!-- wordm:lang end -->

@@ -1,0 +1,32 @@
+---
+title: "经验流"
+title-en: "经验流"
+description: ""
+description-en: ""
+date: 2026-06-06
+date-sort: "2026-06-06T21:40:00+08:00"
+date-display: "2026.06.06 21:40"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-06-06-21-40"
+source: "x"
+source-url-original: null
+original-published-at: "2026-06-06 21:40"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+不要死磕空间的真实感。我要做的是 Agent 经验流。
+
+即：空间编排，情感设计，乐趣设计。这个经验流的目的是让它为我所用，给我扩大认知并得到乐趣。
+
+从“一次生成一个 clip”演化成“Agent 负责完成一个完整创作任务”，这是高手们在做的事。我要往前再进一步。“完成”的定义是什么？它往往就是基于大量数据来发现你需要的是这个。但统计的问题就是在我这里失真。
+
+我要的是长时间的经验流。它不断构建空间，用最直入人心的方式给我启发。总有些场景一眼就能让你感到兴趣并抓住重点。
+
+<!-- wordm:lang end -->

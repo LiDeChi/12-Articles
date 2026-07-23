@@ -1,0 +1,32 @@
+---
+title: "子代理广播"
+title-en: "子代理广播"
+description: ""
+description-en: ""
+date: 2026-07-22
+date-sort: "2026-07-22T22:11:00+08:00"
+date-display: "2026.07.22 22:11"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-07-22-22-11"
+source: "x"
+source-url-original: null
+original-published-at: "2026-07-22 22:11"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+子代理不完全是隔绝的。
+
+它们可能被广播了一些信息。比如我去完一个宋代空间游历回来，书房里的子 Agent 会穿上宋朝服装来上课。纯粹是一种乐趣，也不为别的。
+
+这说明子代理之间要共享一部分全局经验流。不是每个子代理都完整继承主 Agent，但它们应该知道当前叙事气氛、用户状态、空间历史。
+
+否则多代理会变成拼贴，而不是一个世界。
+
+<!-- wordm:lang end -->

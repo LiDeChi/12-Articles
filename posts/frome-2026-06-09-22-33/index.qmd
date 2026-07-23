@@ -1,0 +1,32 @@
+---
+title: "书房大脑"
+title-en: "书房大脑"
+description: ""
+description-en: ""
+date: 2026-06-09
+date-sort: "2026-06-09T22:33:00+08:00"
+date-display: "2026.06.09 22:33"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-06-09-22-33"
+source: "x"
+source-url-original: null
+original-published-at: "2026-06-09 22:33"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+初始场景应该是一个书房。
+
+书房不是皮肤，而是操作系统桌面。墙上有白板，桌上有文件，旁边有书架，房间里可以有打印机、收音机、门、窗户。白板是外部工作记忆，文件柜是资料入口，书架是长期知识库，门是通往其他空间的连接。
+
+Agent 在书房里不是只会说话。它能走到白板前写字，能把 PDF、音频、视频、YouTube、网页、代码都贴成不同外观的卡片。每种文件都有独特的样子，每张卡片都有自己的操作。
+
+我不只是打开一个网页应用，而是进入一个会思考的书房。
+
+<!-- wordm:lang end -->

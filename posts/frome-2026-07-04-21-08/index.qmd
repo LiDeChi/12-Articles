@@ -1,0 +1,32 @@
+---
+title: "指标"
+title-en: "指标"
+description: ""
+description-en: ""
+date: 2026-07-04
+date-sort: "2026-07-04T21:08:00+08:00"
+date-display: "2026.07.04 21:08"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-07-04-21-08"
+source: "x"
+source-url-original: null
+original-published-at: "2026-07-04 21:08"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+连续改进的指标是什么？官网就得呈现出来。
+
+是每时每刻的感知、思考、行动。任何问题的解决，都要看时间节点前一刻在干嘛。
+
+FroMe 的指标不能只看回答正确率。要看感知了多少、思考了多少、行动了多少、记忆重构了多少、空间生成了多少、用户互动了多少、资源浪费了多少、缓存命中了多少。
+
+最重要的是经验流质量：空间吸引力、认知增益、行动转化率、记忆复用率、资源效率、连续性。
+
+<!-- wordm:lang end -->

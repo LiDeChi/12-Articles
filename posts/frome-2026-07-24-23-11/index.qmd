@@ -1,0 +1,33 @@
+---
+title: "从单空间开始"
+title-en: "从单空间开始"
+description: ""
+description-en: ""
+date: 2026-07-24
+date-sort: "2026-07-24T23:11:00+08:00"
+date-display: "2026.07.24 23:11"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-07-24-23-11"
+source: "x"
+source-url-original: null
+original-published-at: "2026-07-24 23:11"
+note: ""
+note-en: ""
+draft: true
+---
+
+<!-- wordm:lang zh -->
+
+单空间铺好给 Agent 调用的结构，同时做 Agent 的意图、记忆、学习机制，然后做多空间的编排。
+
+这是正确路线。
+
+第一步不要做完整宇宙。先做书房。书房里能导入资料，Agent 能消化，能在白板上讲，能贴卡片，能生成一个子空间入口。用户进去互动，结果再回到书房。
+
+一个闭环跑通，再加多空间。否则所有概念都会变成空中楼阁。
+
+<!-- wordm:lang end -->

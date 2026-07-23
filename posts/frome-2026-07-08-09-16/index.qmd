@@ -1,0 +1,32 @@
+---
+title: "传送门"
+title-en: "传送门"
+description: ""
+description-en: ""
+date: 2026-07-08
+date-sort: "2026-07-08T09:16:00+08:00"
+date-display: "2026.07.08 09:16"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-07-08-09-16"
+source: "x"
+source-url-original: null
+original-published-at: "2026-07-08 09:16"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+空间之间需要传送门。
+
+但传送门不是菜单。它应该由一个问题、一段记忆、一张卡片、一次实验失败、一个叙事选择自然生成。
+
+我点击书房白板上的“ARC-3 进化引擎”，不是跳到另一个页面，而是白板背后浮出实验室。Agent 说：这不是新空间，这是你刚才那个想法的内部结构。
+
+这种转场很关键。它让空间连接变成思维路径，而不是链接列表。
+
+<!-- wordm:lang end -->

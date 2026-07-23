@@ -1,0 +1,32 @@
+---
+title: "工具也有戏"
+title-en: "工具也有戏"
+description: ""
+description-en: ""
+date: 2026-06-21
+date-sort: "2026-06-21T12:19:00+08:00"
+date-display: "2026.06.21 12:19"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-06-21-12-19"
+source: "x"
+source-url-original: null
+original-published-at: "2026-06-21 12:19"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+工具调用的视觉表现有几层。
+
+一个是工具本身的基本框架，占 30%；一个是由调用对象的性质补充的视觉，占 70%。这个性质是由 Agent 产生和存储的，就像所有印象都是主观印象。
+
+搜索历史资料，不应该只是 loading，而像档案馆打开。读论文，可以像书架抽出论文卡。调用代码，可以像桌上终端启动。检索记忆，可以像水晶切片旋转。
+
+工具调用不是后台日志，而是空间里发生的事件。
+
+<!-- wordm:lang end -->

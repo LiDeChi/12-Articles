@@ -1,0 +1,65 @@
+---
+title: "我的第一篇 AI 数理文章"
+title-en: "My First Article on AI and Mathematics"
+description: "用香农熵作为起点，测试 Quarto 的数学公式、引用与文章排版。"
+description-en: "A first Quarto article using Shannon entropy to test mathematical notation and article publishing."
+date: 2026-07-23
+date-sort: "2026-07-23T12:33:00+08:00"
+date-display: "2026.07.23"
+category: "AI 数理"
+category-en: "AI & Mathematics"
+categories:
+  - "人工智能"
+  - "数学"
+article-id: "first-ai-math-article"
+source: "site"
+---
+
+<!-- wordm:lang zh -->
+
+# 引言
+
+这是使用 Zed 和 Quarto 编写的第一篇文章。
+
+## 数学公式
+
+行内公式可以写成 $E = mc^2$。
+
+独立公式：
+
+$$H(X) = -\sum_{i=1}^{n}p_i\log p_i$$
+
+## 一个简单命题
+
+设随机变量 $X$ 的概率分布为 $p(x)$，则香农熵衡量了该分布的不确定性。
+
+> Quarto 兼容 Markdown，同时增加了数学公式、引用、交叉引用、 代码执行和多格式输出等能力。
+
+<!-- wordm:lang end -->
+
+<details class="article-translation">
+<summary>English summary</summary>
+
+<!-- wordm:lang en -->
+
+# Introduction
+
+This is the first article written with Zed and Quarto.
+
+## A mathematical formula
+
+Inline mathematics can be written as $E = mc^2$.
+
+For a displayed equation:
+
+$$H(X) = -\sum_{i=1}^{n}p_i\log p_i$$
+
+## A simple proposition
+
+For a random variable $X$ with distribution $p(x)$, Shannon entropy measures the uncertainty of that distribution.
+
+> Quarto is compatible with Markdown while adding mathematical notation, citations, cross-references, code execution, and multi-format publishing.
+
+<!-- wordm:lang end -->
+
+</details>

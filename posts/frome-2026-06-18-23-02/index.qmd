@@ -1,0 +1,32 @@
+---
+title: "想象能力"
+title-en: "想象能力"
+description: ""
+description-en: ""
+date: 2026-06-18
+date-sort: "2026-06-18T23:02:00+08:00"
+date-display: "2026.06.18 23:02"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-06-18-23-02"
+source: "x"
+source-url-original: null
+original-published-at: "2026-06-18 23:02"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+要利用当前图像、视频生成模型的联想能力来拓展你的认知。
+
+图像模型不只是生成漂亮图。它能把抽象概念变成可观察的形态。视频模型不只是生成片段，它能帮助 Agent 设想过程、动作、空间变化和叙事节奏。
+
+未来内容最终以 3D 成形，呈现媒介可以是屏幕，也可以是 VR 眼镜。
+
+但重点不是拟真。拟真泛滥的时候，意义就成了高原。用意义来凝聚信息，这才是空间生成的核心。
+
+<!-- wordm:lang end -->

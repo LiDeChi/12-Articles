@@ -1,0 +1,35 @@
+---
+title: "永远的舞台"
+title-en: "永远的舞台"
+description: ""
+description-en: ""
+date: 2026-08-03
+date-sort: "2026-08-03T21:29:00+08:00"
+date-display: "2026.08.03 21:29"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-08-03-21-29"
+source: "x"
+source-url-original: null
+original-published-at: "2026-08-03 21:29"
+note: ""
+note-en: ""
+draft: true
+---
+
+<!-- wordm:lang zh -->
+
+我要做的是如何让这场木偶戏在一个舞台上永远演下去，而不至于枯燥。
+
+这句话可以作为 FroMe 的精神内核。
+
+LLM 是精密木偶，工具是布线，空间是舞台，记忆是剧本和后台档案，用户是观众也是演员，Agent 是操偶者也是被操纵者。
+
+每个人玩起来的感觉不一样，因为那是在时间里展开的。
+
+FroMe 的问题不是能不能回答，而是能不能持续展开。
+
+<!-- wordm:lang end -->

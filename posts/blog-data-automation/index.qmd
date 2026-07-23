@@ -1,0 +1,44 @@
+---
+title: "从手工报表到自动分析：让数据真正服务策划决策"
+title-en: "From Manual Reports to Automated Analytics for Better Product Decisions"
+description: "把报表自动化做对，策划团队才能把时间投入到策略判断，而不是搬运数字。"
+description-en: "When reporting automation is done right, product teams can spend time on strategy instead of moving numbers around."
+date: 2026-01-15
+date-sort: "2026-01-15T12:00:00+08:00"
+date-display: "2026.01.15"
+category: "数据运营"
+category-en: "Data Ops"
+categories:
+  - "数据运营"
+article-id: "blog-data-automation"
+source: "site"
+source-url-original: null
+original-published-at: null
+note: "自动化的价值，在于让“例行工作零摩擦”。"
+note-en: "Automation creates value when routine work becomes almost frictionless."
+---
+
+<!-- wordm:lang zh -->
+
+如果每次复盘都要先花两小时整理数据，策略讨论就会被疲劳消耗。我们先定义了固定的指标字典，再把 SQL 查询、图表生成和周报模板串成脚本流水线。
+
+统一口径带来的好处非常直接：同一指标在不同项目、不同阶段可横向对比，团队沟通不再陷入“到底哪个数字才对”的争论。
+
+数据平台不是替代判断，而是降低判断成本。信息到位后，策划可以更快地发现异常、形成假设并推进实验。
+
+<!-- wordm:lang end -->
+
+<details class="article-translation">
+<summary>English translation</summary>
+
+<!-- wordm:lang en -->
+
+If every review starts with two hours of data cleanup, strategic discussion gets exhausted before it starts. We first standardized a metrics dictionary, then chained SQL queries, chart generation, and weekly templates into scripts.
+
+The benefit of metric consistency is immediate: the same metric becomes comparable across projects and phases, and teams stop arguing about which number is “the real one.”
+
+A data platform does not replace human judgment; it reduces the cost of judgment. With high-quality signal in place, teams detect anomalies faster, form hypotheses sooner, and run experiments with less drag.
+
+<!-- wordm:lang end -->
+
+</details>

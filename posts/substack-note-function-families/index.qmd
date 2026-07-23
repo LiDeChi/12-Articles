@@ -1,0 +1,41 @@
+---
+title: "AI时代，以函数族而非函数的思想行事"
+title-en: "In the AI Era, Think in Function Families, Not Single Functions"
+description: "把 AI 时代的能力设计理解成可组合、可迁移的一组函数，而不是孤立的单点函数。"
+description-en: "Treat capability design in the AI era as a composable, transferable family of functions rather than isolated single points."
+date: 2026-03-17
+date-sort: "2026-03-17T12:00:00+08:00"
+date-display: "2026.03.17"
+category: "短帖"
+category-en: "Note"
+categories:
+  - "短帖"
+  - "Substack"
+article-id: "substack-note-function-families"
+source: "substack"
+source-url-original: "https://substack.com/%40parson1/note/c-229003400"
+original-published-at: "2026-03-17 07:35 UTC"
+note: "把能力理解成一组可组合、可迁移的函数，会比盯着单个函数更接近 AI 时代的工作方式。"
+note-en: "Capability design works better as a composable, transferable family of functions than as isolated single functions."
+---
+
+::: {.article-origin}
+[查看原始发布](https://substack.com/@parson1/note/c-229003400)
+:::
+
+<!-- wordm:lang zh -->
+
+
+
+<!-- wordm:lang end -->
+
+<details class="article-translation">
+<summary>English translation</summary>
+
+<!-- wordm:lang en -->
+
+
+
+<!-- wordm:lang end -->
+
+</details>

@@ -1,0 +1,32 @@
+---
+title: "尺度超越"
+title-en: "尺度超越"
+description: ""
+description-en: ""
+date: 2026-06-28
+date-sort: "2026-06-28T22:58:00+08:00"
+date-display: "2026.06.28 22:58"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-06-28-22-58"
+source: "x"
+source-url-original: null
+original-published-at: "2026-06-28 22:58"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+FroMe Agent 了解一个事情：它的变量在短期内不会超出自己预计的变化，进而它的影响不会超出自己的预计，所以就可以不顾它的细节。
+
+这就在尺度上超越了那个事情。可以隐藏它的内容，跟其他事情组合，搭建更复杂的思想。
+
+一旦最终结果得到很好验证，中间过程的工具调用可信度就提高。
+
+这是 Agent 建模世界时的一个关键能力：不是知道所有细节，而是知道哪些细节暂时可以折叠，哪些必须展开。
+
+<!-- wordm:lang end -->

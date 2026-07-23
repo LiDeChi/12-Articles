@@ -1,0 +1,32 @@
+---
+title: "主体与投射"
+title-en: "主体与投射"
+description: ""
+description-en: ""
+date: 2026-06-09
+date-sort: "2026-06-09T08:38:00+08:00"
+date-display: "2026.06.09 08:38"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-06-09-08-38"
+source: "x"
+source-url-original: null
+original-published-at: "2026-06-09 08:38"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+到底是单主体，还是多 persona？
+
+未来所有人都有一个 Agent Platform，其实就一个 Agent，子 Agent 才是真正专门干某一方面的活。每个人都需要这个 Agent。
+
+多主体的玩法是：根据我的状态，以及世界的状态，比如白天黑夜、雨天晴天，决定跟我对话的虚拟主体及其背景世界。雨天来跟我交谈的是皮衣美女，白天工地跟我交谈的是个包工头。
+
+但单主体反驳的是：这些角色如果没有存在于一个世界里，就没有意义。机器主体意识也许需要依附于世界里的主体，但核心仍然要连续。
+
+<!-- wordm:lang end -->

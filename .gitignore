@@ -1,0 +1,12 @@
+/.quarto/
+/_site/
+.DS_Store
+.claude/
+
+# Keep the project-level Codex launch action, ignore other local Codex state.
+.codex/*
+!.codex/environments/
+.codex/environments/*
+!.codex/environments/environment.toml
+
+**/*.quarto_ipynb

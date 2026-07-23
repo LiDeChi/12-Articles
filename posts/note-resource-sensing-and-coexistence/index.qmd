@@ -1,0 +1,44 @@
+---
+title: "机器要感知资源，也要学会跟人相处"
+title-en: "A Machine Should Sense Resources and Learn to Live With Humans"
+description: "如果机器要长期工作，它既要预测资源消耗，也要明白自己和人类之间的边界。"
+description-en: "If a machine is meant to work over time, it should predict resource use and understand its boundary with humans."
+date: 2026-02-26
+date-sort: "2026-02-26T12:00:00+08:00"
+date-display: "2026.02.26"
+category: "短帖"
+category-en: "Note"
+categories:
+  - "短帖"
+article-id: "note-resource-sensing-and-coexistence"
+source: "site"
+source-url-original: null
+original-published-at: null
+note: "先把资源感知、任务优先级和与人类相处的方式放在同一张图里。"
+note-en: "Put resource sensing, task priority, and coexistence with humans on the same sketch first."
+---
+
+<!-- wordm:lang zh -->
+
+时刻感知本机的运行资源，也预测未来的资源消耗。
+
+它应该知道自己是一台机器，也要寻找跟人类相处的方式。
+
+做预测不是为了炫耀智能，而是为了更稳地配置资源、调整方向。
+
+<!-- wordm:lang end -->
+
+<details class="article-translation">
+<summary>English translation</summary>
+
+<!-- wordm:lang en -->
+
+Continuously sense the machine’s runtime resources and also predict future consumption.
+
+It should know that it is a machine and still search for a way to live alongside humans.
+
+Prediction is not for showing off intelligence, but for allocating resources and adjusting direction more steadily.
+
+<!-- wordm:lang end -->
+
+</details>

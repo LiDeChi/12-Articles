@@ -1,0 +1,33 @@
+---
+title: "别做静态图"
+title-en: "别做静态图"
+description: ""
+description-en: ""
+date: 2026-07-26
+date-sort: "2026-07-26T12:13:00+08:00"
+date-display: "2026.07.26 12:13"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-07-26-12-13"
+source: "x"
+source-url-original: null
+original-published-at: "2026-07-26 12:13"
+note: ""
+note-en: ""
+draft: true
+---
+
+<!-- wordm:lang zh -->
+
+给 coding Agent 的要求一定要明确：不要把白板和空间做成自作主张的 SVG 静态图。
+
+对象必须有语义。卡片必须有类型、来源、操作、状态和记忆绑定。空间必须由 JSON 描述。布局可以程序化，但资产和交互要绑定到语义对象。
+
+视觉可以先简单，但结构不能错。
+
+如果第一版做成一张漂亮但不可行动的图，就偏离了 FroMe。我要的是可交互空间，不是视觉稿。
+
+<!-- wordm:lang end -->

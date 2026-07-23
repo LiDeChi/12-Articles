@@ -1,0 +1,33 @@
+---
+title: "白板到空间"
+title-en: "白板到空间"
+description: ""
+description-en: ""
+date: 2026-07-28
+date-sort: "2026-07-28T21:40:00+08:00"
+date-display: "2026.07.28 21:40"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-07-28-21-40"
+source: "x"
+source-url-original: null
+original-published-at: "2026-07-28 21:40"
+note: ""
+note-en: ""
+draft: true
+---
+
+<!-- wordm:lang zh -->
+
+白板上的一张卡片，应该可以长成一个空间。
+
+例如白板上有“记忆机制”卡片。点击后，进入一个记忆工厂：原始资料从传送带进入，编译器压缩成记忆块，记忆块进入书架和晶体库，触发信号像光线一样连接到行动面板。
+
+这就是空间化解释。
+
+它比普通文章更直观，也比普通视频更可交互。用户不是看完，而是进入一个概念内部。
+
+<!-- wordm:lang end -->

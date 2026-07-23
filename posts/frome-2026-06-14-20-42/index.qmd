@@ -1,0 +1,32 @@
+---
+title: "ARC进化引擎"
+title-en: "ARC进化引擎"
+description: ""
+description-en: ""
+date: 2026-06-14
+date-sort: "2026-06-14T20:42:00+08:00"
+date-display: "2026.06.14 20:42"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-06-14-20-42"
+source: "x"
+source-url-original: null
+original-published-at: "2026-06-14 20:42"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+ARC-3 参数可以做一个通用的进化引擎。
+
+相当于它去建模世界，而且为了跟人类的基准行为比较，所以是一种跟人类思维方式相近的方式去建模。
+
+我不只是想让它做题。我想把这种能力扩展为一个世界建模系统：给定目标、环境、规则、反馈和资源预算，让 Agent 生成多个策略体，进行实验、比较、淘汰、变异、组合，最后得到更好的行动策略或空间设计。
+
+它可以用来生成更好的讲解空间、记忆压缩方式、时间安排、游戏化体验和 coding Agent prompt。
+
+<!-- wordm:lang end -->

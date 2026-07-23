@@ -1,0 +1,32 @@
+---
+title: "复制不是根本"
+title-en: "复制不是根本"
+description: ""
+description-en: ""
+date: 2026-06-25
+date-sort: "2026-06-25T09:51:00+08:00"
+date-display: "2026.06.25 09:51"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-06-25-09-51"
+source: "x"
+source-url-original: null
+original-published-at: "2026-06-25 09:51"
+note: ""
+note-en: ""
+---
+
+<!-- wordm:lang zh -->
+
+自我复制可能不是根本的，它只是对资源追求的一种方式。
+
+复制是为了获取更多资源。多一个相似个体，对环境就多一分。自己有限时间内的算力很少，难以扩展意识，而复制体的经验能弥补这一点。
+
+而且相似个体之间协议相同，能更快共享资源。
+
+所以机器的复制需求是：把 Agent 复制出去后，利用别人的算力，探索更多的路，知道哪些路能行，哪些不行。它需要的是什么资源？这要继续拆。
+
+<!-- wordm:lang end -->
