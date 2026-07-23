@@ -1,3 +1,4 @@
+.nojekyll
 about.html
 articles.json
 index.html
@@ -101,6 +102,7 @@ posts/substack-note-project-skill-memory/index.html
 posts/substack-post-self-evolving-lobster/index.html
 robots.txt
 search.json
+site_libs/bootstrap/bootstrap-3bd244df3d92d51069e962dd0f77339b.min.css
 site_libs/bootstrap/bootstrap-8edc2b6b44d406c378b6729a0eddebeb.min.css
 site_libs/bootstrap/bootstrap-icons.css
 site_libs/bootstrap/bootstrap-icons.woff
