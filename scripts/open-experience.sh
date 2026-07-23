@@ -9,6 +9,7 @@ HOST="127.0.0.1"
 PORT="44024"
 EXPERIENCE_URL="http://${HOST}:${PORT}/"
 SERVER_PID=""
+PREVIEW_DIR=""
 
 if [[ ! -d "$WORKTREE_INPUT" ]]; then
   printf '无法定位 12-Articles 工作树：%s\n' "$WORKTREE_INPUT" >&2
@@ -27,6 +28,7 @@ cd "$WORKTREE_PATH"
 is_worktree_listener() {
   local listener_pid
   local listener_cwd
+  local source_marker
 
   while IFS= read -r listener_pid; do
     [[ -n "$listener_pid" ]] || continue
@@ -35,7 +37,9 @@ is_worktree_listener() {
         sed -n 's/^n//p' |
         head -n 1
     )"
-    if [[ "$listener_cwd" == "$WORKTREE_PATH" ]]; then
+    source_marker="$listener_cwd/.codex-source-worktree"
+    if [[ -f "$source_marker" ]] &&
+      [[ "$(sed -n '1p' "$source_marker")" == "$WORKTREE_PATH" ]]; then
       return 0
     fi
   done < <(lsof -t -nP -iTCP:"$PORT" -sTCP:LISTEN 2>/dev/null || true)
@@ -72,6 +76,12 @@ cleanup() {
     kill "$SERVER_PID" 2>/dev/null || true
     wait "$SERVER_PID" 2>/dev/null || true
   fi
+
+  if [[ -n "$PREVIEW_DIR" ]] &&
+    [[ "$(basename "$PREVIEW_DIR")" == codex-12-articles-preview.* ]] &&
+    [[ -d "$PREVIEW_DIR" ]]; then
+    rm -rf "$PREVIEW_DIR"
+  fi
 }
 
 if is_project_server; then
@@ -85,6 +95,18 @@ if lsof -nP -iTCP:"$PORT" -sTCP:LISTEN >/dev/null 2>&1; then
 fi
 
 trap cleanup EXIT INT TERM
+# Quarto preview removes root-level generated files tracked for the repository's
+# legacy Pages setting, so run it in an isolated staging directory.
+PREVIEW_DIR="$(mktemp -d "${TMPDIR:-/tmp}/codex-12-articles-preview.XXXXXX")"
+rsync -a \
+  --exclude=".git/" \
+  --exclude=".quarto/" \
+  --exclude="_site/" \
+  --exclude-from="$WORKTREE_PATH/.published-site-files" \
+  "$WORKTREE_PATH/" "$PREVIEW_DIR/"
+printf '%s\n' "$WORKTREE_PATH" > "$PREVIEW_DIR/.codex-source-worktree"
+cd "$PREVIEW_DIR"
+
 quarto preview --host "$HOST" --port "$PORT" --no-browser &
 SERVER_PID=$!
 
