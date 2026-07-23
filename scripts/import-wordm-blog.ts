@@ -35,12 +35,12 @@ type BlogArticle = {
   source?: "site" | "x" | "substack";
   sourceUrl?: string | null;
   originalPublishedAt?: string | null;
+  draft?: boolean;
 };
 
 async function main() {
 const args = process.argv.slice(2);
 const sourceIndex = args.indexOf("--source");
-const throughIndex = args.indexOf("--published-through");
 const overwrite = args.includes("--overwrite");
 
 if (sourceIndex < 0 || !args[sourceIndex + 1]) {
@@ -51,10 +51,6 @@ if (sourceIndex < 0 || !args[sourceIndex + 1]) {
 
 const projectRoot = resolve(import.meta.dirname, "..");
 const sourceRoot = resolve(args[sourceIndex + 1]);
-const publishedThrough =
-  throughIndex >= 0 && args[throughIndex + 1]
-    ? args[throughIndex + 1]
-    : "2026-07-23T18:38:22+08:00";
 const sourceModulePath = join(sourceRoot, "src/data/blogArticles.ts");
 
 if (!existsSync(sourceModulePath)) {
@@ -192,10 +188,6 @@ for (const article of BLOG_ARTICLES as BlogArticle[]) {
       ].filter(Boolean),
     ),
   );
-  const publishCutoff = publishedThrough.includes("T")
-    ? publishedThrough
-    : `${publishedThrough}T23:59:59+08:00`;
-  const isFuture = normalizedDate.sort > publishCutoff;
   const zhBody = renderLanguage(article, "zh", articleDir);
   const enBody = renderLanguage(article, "en", articleDir);
   const originalLink = article.sourceUrl
@@ -228,7 +220,7 @@ for (const article of BLOG_ARTICLES as BlogArticle[]) {
     `original-published-at: ${article.originalPublishedAt ? yamlString(article.originalPublishedAt) : "null"}`,
     `note: ${yamlString(article.note.zh)}`,
     `note-en: ${yamlString(article.note.en || article.note.zh)}`,
-    ...(isFuture ? ["draft: true"] : []),
+    ...(article.draft === true ? ["draft: true"] : []),
     "---",
   ].join("\n");
 

@@ -14,7 +14,6 @@ categories:
   - "行为经济学"
 article-id: "reward-functions-01"
 source: "site"
-draft: true
 ---
 
 <!-- wordm:lang zh -->
@@ -27,15 +26,15 @@ draft: true
 
 早在18世纪，伯努利就用圣彼得堡悖论表明数学期望是无法表达人们的真实决策的。
 
-![圣彼得堡悖论的收益分布](figures/figure-01.png)
+![圣彼得堡悖论的收益分布](figures/figure-01.jpeg)
 
 所以提出了以**效用**代替收益，效用是经过心理处理的概念。
 
-![以效用替代直接收益](figures/figure-02.png)
+![以效用替代直接收益](figures/figure-02.jpeg)
 
 伯努利的做法是以对数函数 $u(x)=\ln(x)$ 代替直接的收益，
 
-![伯努利对数效用计算](figures/figure-03.png)
+![伯努利对数效用计算](figures/figure-03.jpeg)
 
 最后结果是有限的 $2\ln 2$ 约等于 1.38，刚好等于第二次投掷的直接效用。
 
@@ -79,11 +78,11 @@ draft: true
 
 具体到这个阿莱悖论，心理上的价值是
 
-![前景理论的主观价值表达式](figures/figure-06.png)
+![前景理论的主观价值表达式](figures/figure-06.jpeg)
 
 其中，$w(p)$ 是人们对概率的主观感受，$v$ 是对效用的主观感受
 
-![概率加权函数](figures/figure-07.png)
+![概率加权函数](figures/figure-07.jpeg)
 
 ![概率加权函数曲线](figures/figure-08.png)
 
@@ -91,7 +90,7 @@ draft: true
 
 $v(x)$ 取一个边际递减的函数比如
 
-![前景理论价值函数](figures/figure-09.png)
+![前景理论价值函数](figures/figure-09.jpeg)
 
 ![损失厌恶与敏感度递减曲线](figures/figure-10.png)
 

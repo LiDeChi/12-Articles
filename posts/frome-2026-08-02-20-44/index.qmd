@@ -17,7 +17,6 @@ source-url-original: null
 original-published-at: "2026-08-02 20:44"
 note: ""
 note-en: ""
-draft: true
 ---
 
 <!-- wordm:lang zh -->
