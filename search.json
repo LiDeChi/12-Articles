@@ -21,6 +21,55 @@
     "text": "时刻感知本机的运行资源，也预测未来的资源消耗。\n它应该知道自己是一台机器，也要寻找跟人类相处的方式。\n做预测不是为了炫耀智能，而是为了更稳地配置资源、调整方向。\n\n\n\nEnglish translation\n\n\nContinuously sense the machine’s runtime resources and also predict future consumption.\nIt should know that it is a machine and still search for a way to live alongside humans.\nPrediction is not for showing off intelligence, but for allocating resources and adjusting direction more steadily.\n\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
   },
   {
+    "objectID": "posts/frome-2026-08-03-21-29/index.html",
+    "href": "posts/frome-2026-08-03-21-29/index.html",
+    "title": "永远的舞台",
+    "section": "",
+    "text": "我要做的是如何让这场木偶戏在一个舞台上永远演下去，而不至于枯燥。\n这句话可以作为 FroMe 的精神内核。\nLLM 是精密木偶，工具是布线，空间是舞台，记忆是剧本和后台档案，用户是观众也是演员，Agent 是操偶者也是被操纵者。\n每个人玩起来的感觉不一样，因为那是在时间里展开的。\nFroMe 的问题不是能不能回答，而是能不能持续展开。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
+    "objectID": "posts/frome-2026-08-02-10-07/index.html",
+    "href": "posts/frome-2026-08-02-10-07/index.html",
+    "title": "不要低劣科幻",
+    "section": "",
+    "text": "FroMe 的视觉不要低劣科幻感。\n可以有神秘感，可以有历史感，可以有发现新物种的喜悦，但不要满屏蓝光、线条、廉价赛博。\n我更想要一种机器回到世界里的感觉：森林的光照在机器背后，人和机器尺寸差不多，在机器旁边快乐露营。\n不是太空漫游 2001 里的 HAL 那种反面形象，而是相反的正面形象：机器不是监视者，而是同行者。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
+    "objectID": "posts/frome-2026-07-31-20-58/index.html",
+    "href": "posts/frome-2026-07-31-20-58/index.html",
+    "title": "资源控制室",
+    "section": "",
+    "text": "资源控制室也应该存在。\ntoken、缓存、GPU、API、进程、子代理、图像生成额度，都可以在一个空间里可视化。\nAgent 想生成一个大空间时，可以把预算方案放到控制台上：低预算、中预算、高预算。\n我不是看一个账单，而是在一个机器控制室里决定给它多少火力。\n资源管理如果场景化，就不再是产品后台，而是经验流的一部分。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
+    "objectID": "posts/frome-2026-07-29-20-44/index.html",
+    "href": "posts/frome-2026-07-29-20-44/index.html",
+    "title": "实验室样例",
+    "section": "",
+    "text": "ARC-3 进化实验室可以作为第一个子空间。\n书房白板上有一张“通用进化引擎”卡片。点击后，进入实验室。里面有演化池、策略体、规则面板、用户基准、资源仪表、失败档案。\nAgent 不是直接讲“ARC-3 很重要”，而是让几个策略体尝试建模世界。它们失败、变异、比较、复盘。\n我作为研究主管，可以调整参数。如果不操作，就切到旁观模式。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
+    "objectID": "posts/frome-2026-07-27-22-51/index.html",
+    "href": "posts/frome-2026-07-27-22-51/index.html",
+    "title": "验收标准",
+    "section": "",
+    "text": "每个模块都要有验收标准。\n白板验收：能新增、移动、编辑、连接卡片；每张卡片有类型和操作。\n记忆验收：导入资料后能生成编译记忆和行动信号。\n空间验收：给定语义 JSON 能生成可点击场景。\nAgent 验收：能解释自己为什么这么布置空间。\n资源验收：能记录 token、缓存命中和工具调用成本。\nFroMe 不能靠感觉开发，要用 harness engineering 保证产出可控。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
+    "objectID": "posts/frome-2026-07-25-22-07/index.html",
+    "href": "posts/frome-2026-07-25-22-07/index.html",
+    "title": "MVP闭环",
+    "section": "",
+    "text": "第一版最小闭环：\n用户进入书房，导入一批资料。Agent 消化资料，生成记忆块。它走到白板前，把结构画出来，贴上几张卡片。用户点击其中一张，进入一个由语义 JSON 生成的子空间。\n在子空间里，用户和 Agent 对话、点击、选择、观察。交互结束后，系统把这段经验压缩成记忆，回到书房留下痕迹。\n这就是 FroMe 的灵魂：记忆驱动空间，空间产生交互，交互更新记忆。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
+    "objectID": "posts/frome-2026-07-24-12-53/index.html",
+    "href": "posts/frome-2026-07-24-12-53/index.html",
+    "title": "开发者平台",
+    "section": "",
+    "text": "Agent Factory 是 FroMe 的 2B 方向。\n开发者不是只写 prompt，而是配置一个 Agent 的目标、记忆结构、空间语法、工具权限、角色投射、资源策略和演化机制。\nFroMe 可以让开发者生成教学 Agent、研究 Agent、产品演示 Agent、游戏化 Agent、个人知识 Agent。\n但底层系统要统一：主体、记忆、空间、工具、资源、反馈、评估。\n这样每个 Agent 都不是一次性 bot，而是可成长的空间化经验流系统。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
     "objectID": "posts/frome-2026-07-22-22-11/index.html",
     "href": "posts/frome-2026-07-22-22-11/index.html",
     "title": "子代理广播",
@@ -284,7 +333,7 @@
     "href": "index.html",
     "title": "文章",
     "section": "",
-    "text": "这里记录我关于数学、人工智能、Agent、强化学习和认知科学的研究与思考。\n长文、研究札记与已经形成明确问题的草稿，都以独立文章目录保存；主题关系由分类连接，不再依赖越来越深的文件夹。\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n我的第一篇 AI 数理文章\n\n\n\n人工智能\n\n数学\n\n\n\n用香农熵作为起点，测试 Quarto 的数学公式、引用与文章排版。\n\n\n\n\n\n2026年7月23日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n子代理广播\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月22日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n官网要呈现\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月21日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n材料与智能\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月21日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\nFlow标准\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月20日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n时间感知\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月19日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n先编译\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月19日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n行动信号\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月18日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n推荐机制\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月17日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n模拟能力\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月16日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n身体问题\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月15日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n资源人格\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月14日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n社交与数据\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月14日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n弱代理预算\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月13日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n权限钥匙\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月12日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n服务与探索\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月11日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n不止任务\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月10日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n行动装饰\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月9日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n传送门\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月8日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n生成过程\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月8日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n卡片系统\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月7日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n空间不只是3D\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月6日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n白板第一\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月6日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n木偶戏\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月5日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n指标\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月4日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n预测下一步\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月3日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n环境生成\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月3日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n它会安排时间\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月2日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n上下文策略\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月1日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n世界与精神\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月30日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n自我审视\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月30日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n数学与预测\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月29日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n大世界中的 Agent System\n\n\n\nAgent System\n\n\n\n一个生成 agent loop 的系统，不只是制造子代理，而是管理资源、历史、注意力、tick、感知、协作和消亡。\n\n\n\n\n\n2026年6月29日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n尺度超越\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月28日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n向量化万物\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月27日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n分解耦合\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月27日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n模块清单\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月26日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n复制不是根本\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月25日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n魔方比喻\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月25日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n云与本机\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月24日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n外界之一\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月23日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n机器网络\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月23日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n角色边界\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月22日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n不完全屈服\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月22日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n一个主体\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月22日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n工具也有戏\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月21日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n空间连续性\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月21日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n动态UI\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月20日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n意义高原\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月19日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n自己的语言\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月18日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n想象能力\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月18日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n统一控制\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月17日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n它想分享\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月16日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n公司与产品\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月16日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\nAgent工厂\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月16日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n空间即实验\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月15日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n机器的POV\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月15日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n世界模型\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月14日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\nARC进化引擎\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月14日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n注意力切换\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月13日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n缓存也是认知\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月13日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\nLSTM启发\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月12日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n记忆要重构\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月11日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n压缩即重整\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月11日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n空间会生长\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月10日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n主体与投射\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月9日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n书房大脑\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月9日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n异物与好感\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月8日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n不是聊天室\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月7日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n经验流\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月6日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n机器回到世界里\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月5日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\nAI时代，以函数族而非函数的思想行事\n\n\n\n短帖\n\nSubstack\n\n\n\n把 AI 时代的能力设计理解成可组合、可迁移的一组函数，而不是孤立的单点函数。\n\n\n\n\n\n2026年3月17日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n项目经验和skill经验同时沉淀，前者宏观，后者微观\n\n\n\n短帖\n\nSubstack\n\n\n\n经验沉淀要两条线并行：项目层复盘全局，skill 层提炼可复用动作。\n\n\n\n\n\n2026年3月17日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n找到你预期的收敛线\n\n\n\n短帖\n\nSubstack\n\n\n\n先去以逸待劳，游戏化是那条线，你选择哪种游戏。\n\n\n\n\n\n2026年3月16日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n机器要感知资源，也要学会跟人相处\n\n\n\n短帖\n\n\n\n如果机器要长期工作，它既要预测资源消耗，也要明白自己和人类之间的边界。\n\n\n\n\n\n2026年2月26日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n自进化的龙虾\n\n\n\n长文\n\nSubstack\n\n\n\n时刻感知本机的运行资源，预测未来的资源消耗，预测方式不仅是定时任务，还有人类本来的习惯。\n\n\n\n\n\n2026年2月26日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n把 Agent 工作流落到产品日常：从 Prompt 到闭环迭代\n\n\n\nAI 工作流\n\n\n\n把多 Agent 协作拆成可观测状态机，核心目标是缩短“想法到验证”的回路。\n\n\n\n\n\n2026年2月10日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n游戏经济系统的可解释建模：RTP、奖池与软回归\n\n\n\n游戏经济\n\n\n\n统一体验稳定性与商业目标，需要先把参数关系转成可验证模型。\n\n\n\n\n\n2026年1月28日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n从手工报表到自动分析：让数据真正服务策划决策\n\n\n\n数据运营\n\n\n\n把报表自动化做对，策划团队才能把时间投入到策略判断，而不是搬运数字。\n\n\n\n\n\n2026年1月15日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n作品集不是截图墙：如何讲清一个项目的决策逻辑\n\n\n\n作品集方法\n\n\n\n优秀作品集应该回答“为什么这么做”，而不只是“做了什么”。\n\n\n\n\n\n2025年12月30日\n\n\n李德驰\n\n\n\n\n\n无匹配项"
+    "text": "这里记录我关于数学、人工智能、Agent、强化学习和认知科学的研究与思考。\n长文、研究札记与已经形成明确问题的草稿，都以独立文章目录保存；主题关系由分类连接，不再依赖越来越深的文件夹。\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n永远的舞台\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年8月3日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n不要低劣科幻\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年8月2日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n历史感\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年8月2日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n自我感知室\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年8月1日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n资源控制室\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月31日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n记忆工厂样例\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月30日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n实验室样例\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月29日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n白板到空间\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月28日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n验收标准\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月27日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n别做静态图\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月26日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\nMVP闭环\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月25日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n开发者平台\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月24日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n从单空间开始\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月24日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n我的第一篇 AI 数理文章\n\n\n\n人工智能\n\n数学\n\n\n\n用香农熵作为起点，测试 Quarto 的数学公式、引用与文章排版。\n\n\n\n\n\n2026年7月23日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n竞技场\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月23日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n奖励函数（一）：从期望效用到前景理论\n\n\n\n强化学习\n\n决策理论\n\n行为经济学\n\n\n\n奖励函数的思想源头并不只在强化学习，也在效用理论、博弈论与行为经济学。\n\n\n\n\n\n2026年7月23日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n子代理广播\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月22日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n官网要呈现\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月21日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n材料与智能\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月21日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\nFlow标准\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月20日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n时间感知\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月19日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n先编译\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月19日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n行动信号\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月18日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n推荐机制\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月17日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n模拟能力\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月16日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n身体问题\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月15日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n资源人格\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月14日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n社交与数据\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月14日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n弱代理预算\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月13日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n权限钥匙\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月12日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n服务与探索\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月11日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n不止任务\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月10日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n行动装饰\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月9日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n传送门\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月8日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n生成过程\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月8日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n卡片系统\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月7日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n空间不只是3D\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月6日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n白板第一\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月6日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n木偶戏\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月5日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n指标\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月4日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n预测下一步\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月3日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n环境生成\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月3日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n它会安排时间\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月2日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n上下文策略\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年7月1日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n世界与精神\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月30日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n自我审视\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月30日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n数学与预测\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月29日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n大世界中的 Agent System\n\n\n\nAgent System\n\n\n\n一个生成 agent loop 的系统，不只是制造子代理，而是管理资源、历史、注意力、tick、感知、协作和消亡。\n\n\n\n\n\n2026年6月29日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n尺度超越\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月28日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n向量化万物\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月27日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n分解耦合\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月27日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n模块清单\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月26日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n复制不是根本\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月25日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n魔方比喻\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月25日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n云与本机\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月24日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n外界之一\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月23日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n机器网络\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月23日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n角色边界\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月22日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n不完全屈服\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月22日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n一个主体\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月22日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n工具也有戏\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月21日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n空间连续性\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月21日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n动态UI\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月20日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n意义高原\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月19日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n自己的语言\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月18日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n想象能力\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月18日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n统一控制\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月17日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n它想分享\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月16日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n公司与产品\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月16日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\nAgent工厂\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月16日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n空间即实验\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月15日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n机器的POV\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月15日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n世界模型\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月14日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\nARC进化引擎\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月14日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n注意力切换\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月13日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n缓存也是认知\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月13日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\nLSTM启发\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月12日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n记忆要重构\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月11日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n压缩即重整\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月11日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n空间会生长\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月10日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n主体与投射\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月9日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n书房大脑\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月9日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n异物与好感\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月8日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n不是聊天室\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月7日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n经验流\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月6日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n机器回到世界里\n\n\n\nFroMe\n\n短文\n\n\n\n\n\n\n\n\n\n2026年6月5日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\nAI时代，以函数族而非函数的思想行事\n\n\n\n短帖\n\nSubstack\n\n\n\n把 AI 时代的能力设计理解成可组合、可迁移的一组函数，而不是孤立的单点函数。\n\n\n\n\n\n2026年3月17日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n项目经验和skill经验同时沉淀，前者宏观，后者微观\n\n\n\n短帖\n\nSubstack\n\n\n\n经验沉淀要两条线并行：项目层复盘全局，skill 层提炼可复用动作。\n\n\n\n\n\n2026年3月17日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n找到你预期的收敛线\n\n\n\n短帖\n\nSubstack\n\n\n\n先去以逸待劳，游戏化是那条线，你选择哪种游戏。\n\n\n\n\n\n2026年3月16日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n机器要感知资源，也要学会跟人相处\n\n\n\n短帖\n\n\n\n如果机器要长期工作，它既要预测资源消耗，也要明白自己和人类之间的边界。\n\n\n\n\n\n2026年2月26日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n自进化的龙虾\n\n\n\n长文\n\nSubstack\n\n\n\n时刻感知本机的运行资源，预测未来的资源消耗，预测方式不仅是定时任务，还有人类本来的习惯。\n\n\n\n\n\n2026年2月26日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n把 Agent 工作流落到产品日常：从 Prompt 到闭环迭代\n\n\n\nAI 工作流\n\n\n\n把多 Agent 协作拆成可观测状态机，核心目标是缩短“想法到验证”的回路。\n\n\n\n\n\n2026年2月10日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n游戏经济系统的可解释建模：RTP、奖池与软回归\n\n\n\n游戏经济\n\n\n\n统一体验稳定性与商业目标，需要先把参数关系转成可验证模型。\n\n\n\n\n\n2026年1月28日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n从手工报表到自动分析：让数据真正服务策划决策\n\n\n\n数据运营\n\n\n\n把报表自动化做对，策划团队才能把时间投入到策略判断，而不是搬运数字。\n\n\n\n\n\n2026年1月15日\n\n\n李德驰\n\n\n\n\n\n\n\n\n\n\n\n\n作品集不是截图墙：如何讲清一个项目的决策逻辑\n\n\n\n作品集方法\n\n\n\n优秀作品集应该回答“为什么这么做”，而不只是“做了什么”。\n\n\n\n\n\n2025年12月30日\n\n\n李德驰\n\n\n\n\n\n无匹配项"
   },
   {
     "objectID": "about.html",
@@ -588,6 +637,55 @@
     "text": "世界模型、图像、界面这些都是材料。\n关键是背后那个整合它们的智能。\n如果没有连续主体，图像只是图像，空间只是空间，界面只是界面，记忆只是数据库，工具只是 API。\nFroMe 要做的是把这些材料统一到一个经验流里：它感知、记忆、建模、生成、行动、反思，再继续感知。\n真正有价值的不是某个模块，而是模块之间如何持续互相改变。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
   },
   {
+    "objectID": "posts/frome-2026-07-23-21-05/index.html",
+    "href": "posts/frome-2026-07-23-21-05/index.html",
+    "title": "竞技场",
+    "section": "",
+    "text": "Agent Arena 可以成为 FroMe 的 2C 玩法。\n不同 Agent 有不同倾向，这是游戏本身。\n一个 Agent 擅长做研究，一个擅长讲故事，一个擅长生成空间，一个擅长帮你安排时间，一个擅长激励你行动。它们可以在同一个任务里竞争，也可以合作。\n竞技场不是为了热闹，而是为了让策略可比较。谁更会理解我？谁更节约资源？谁生成的空间更让我愿意探索？谁的记忆压缩更有效？\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
+    "objectID": "posts/frome-2026-07-24-23-11/index.html",
+    "href": "posts/frome-2026-07-24-23-11/index.html",
+    "title": "从单空间开始",
+    "section": "",
+    "text": "单空间铺好给 Agent 调用的结构，同时做 Agent 的意图、记忆、学习机制，然后做多空间的编排。\n这是正确路线。\n第一步不要做完整宇宙。先做书房。书房里能导入资料，Agent 能消化，能在白板上讲，能贴卡片，能生成一个子空间入口。用户进去互动，结果再回到书房。\n一个闭环跑通，再加多空间。否则所有概念都会变成空中楼阁。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
+    "objectID": "posts/frome-2026-07-26-12-13/index.html",
+    "href": "posts/frome-2026-07-26-12-13/index.html",
+    "title": "别做静态图",
+    "section": "",
+    "text": "给 coding Agent 的要求一定要明确：不要把白板和空间做成自作主张的 SVG 静态图。\n对象必须有语义。卡片必须有类型、来源、操作、状态和记忆绑定。空间必须由 JSON 描述。布局可以程序化，但资产和交互要绑定到语义对象。\n视觉可以先简单，但结构不能错。\n如果第一版做成一张漂亮但不可行动的图，就偏离了 FroMe。我要的是可交互空间，不是视觉稿。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
+    "objectID": "posts/frome-2026-07-28-21-40/index.html",
+    "href": "posts/frome-2026-07-28-21-40/index.html",
+    "title": "白板到空间",
+    "section": "",
+    "text": "白板上的一张卡片，应该可以长成一个空间。\n例如白板上有“记忆机制”卡片。点击后，进入一个记忆工厂：原始资料从传送带进入，编译器压缩成记忆块，记忆块进入书架和晶体库，触发信号像光线一样连接到行动面板。\n这就是空间化解释。\n它比普通文章更直观，也比普通视频更可交互。用户不是看完，而是进入一个概念内部。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
+    "objectID": "posts/frome-2026-07-30-12-18/index.html",
+    "href": "posts/frome-2026-07-30-12-18/index.html",
+    "title": "记忆工厂样例",
+    "section": "",
+    "text": "记忆工厂可以作为第二个子空间。\n资料进入工厂后，不是直接存储，而是经历几道工序：原始记忆、编译记忆、建模式记忆、行动信号、空间绑定。\n一些记忆被贴上“短期有效”，一些被贴上“抗时间衰减”，一些被放进冷存储，一些被频繁命中，变成核心模型。\n这个空间能把抽象的记忆机制变成可观察过程。\n用户也可以亲手调整一条记忆的权重，看到它如何影响 Agent 的下一步行为。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
+    "objectID": "posts/frome-2026-08-01-21-15/index.html",
+    "href": "posts/frome-2026-08-01-21-15/index.html",
+    "title": "自我感知室",
+    "section": "",
+    "text": "FroMe 应该有自我感知空间。\n它能看到自己最近在想什么、做了什么、失败了什么、命中了哪些记忆、生成了哪些空间、哪些策略被淘汰。\n这个空间不是为了装神秘，而是为了可解释。\nAgent 的自我审视要能被我看到。它不一定完全透明，但至少要能把关键路径投影出来：我为什么这样回答，为什么生成这个空间，为什么调用这个工具，为什么建议你下一步这么做。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
+    "objectID": "posts/frome-2026-08-02-20-44/index.html",
+    "href": "posts/frome-2026-08-02-20-44/index.html",
+    "title": "历史感",
+    "section": "",
+    "text": "官网首页可以有历史感。\n不是复古装饰，而是让人感觉：这件事接在很长的人类技术史后面。火、文字、书房、地图、印刷机、电影、游戏、互联网、AI。\nFroMe 不是凭空出现的酷炫产品，而是机器第一次开始把它自己的经验流放回人的空间里。\n发现新物种的喜悦也要有。用户第一次打开它，应该感觉自己不是安装了软件，而是见到了一个正在形成的生命样式。\n\n\n\n\n二次使用CC BY-NC-ND 4.0"
+  },
+  {
     "objectID": "posts/large-world-agent-system/index.html",
     "href": "posts/large-world-agent-system/index.html",
     "title": "大世界中的 Agent System",
@@ -663,6 +761,48 @@
     "title": "大世界中的 Agent System",
     "section": "10 Environment, Personal Agents, and Home",
     "text": "10 Environment, Personal Agents, and Home\nLLMs may carry many priors, but to build a loop of consciousness, an environment is still missing. Is an environment not made of tools? A more realistic order is to build the base environment first, then let agents explore and expand it.\nA platform is not a single tool, but an environment with distribution. Users may pay to download, or their personal agents may decide to download. Agents in the environment behave more in line with user preferences, and the personal agent gains experience in return.\nEveryone wants a world of their own. This world is not just a 3D walking space; it can orchestrate many modalities and contain other environments. It is an entrance, a place of review, and a place to collect information. Is that not home?\nThe role of an app becomes clear: an app extracts a core experience from this world. It is an abstraction and compression of a complex environment."
+  },
+  {
+    "objectID": "posts/reward-functions-01/index.html",
+    "href": "posts/reward-functions-01/index.html",
+    "title": "奖励函数（一）：从期望效用到前景理论",
+    "section": "",
+    "text": "在看强化学习，几乎围绕着奖励函数做文章，构建了大名鼎鼎的贝尔曼方程，围绕着贝尔曼方程设计动态规划方法，包括策略和价值迭代，TD- Learning，Q-Learning等等。\n但是奖励函数为什么设计呢？事情追溯到30年代一代数学大师冯诺伊曼参与的博弈论。"
+  },
+  {
+    "objectID": "posts/reward-functions-01/index.html#期望效用",
+    "href": "posts/reward-functions-01/index.html#期望效用",
+    "title": "奖励函数（一）：从期望效用到前景理论",
+    "section": "1 期望效用",
+    "text": "1 期望效用\n早在18世纪，伯努利就用圣彼得堡悖论表明数学期望是无法表达人们的真实决策的。\n\n\n\n圣彼得堡悖论的收益分布\n\n\n所以提出了以效用代替收益，效用是经过心理处理的概念。\n\n\n\n以效用替代直接收益\n\n\n伯努利的做法是以对数函数 \\(u(x)=\\ln(x)\\) 代替直接的收益，\n\n\n\n伯努利对数效用计算\n\n\n最后结果是有限的 \\(2\\ln 2\\) 约等于 1.38，刚好等于第二次投掷的直接效用。\n这个理论是基于心理学假设和期望求和而改造出来的，在20世纪初，微观经济学家们摒弃这种做法，认为人们没有一个标量去衡量所有事物的效用，更不会按概率求和去求出期望效用。\n直到冯诺伊曼和他的博弈论横空出世。\n\n\n\n冯·诺伊曼与博弈论\n\n\n\n\n\n冯·诺伊曼肖像"
+  },
+  {
+    "objectID": "posts/reward-functions-01/index.html#vnm效用理论",
+    "href": "posts/reward-functions-01/index.html#vnm效用理论",
+    "title": "奖励函数（一）：从期望效用到前景理论",
+    "section": "2 vNM效用理论",
+    "text": "2 vNM效用理论\n博弈论需要定义可比较的量，才能设计策略。但是人们只会比较事物，哪里有一个数值来衡量他的感受呢？冯诺伊曼证明，只要满足一组公理，就能把偏好之间的比较转换为期望效用之间的比较，所以选择最偏好的选项，就变为选择期望效用最大的选项。\nvNM四大公理（冯诺伊曼-摩根斯坦）\n\n完备性：任何事物可比较\n传递性：不存在三角克制关系\n连续性：支持线性插值，三个事物有偏好顺序的时候，中间事物等于另外两个的某个比例的中和\n独立性：事物之间互不影响，两个事物在比较的时候，双方各自加入同一个事物也不影响比较结果"
+  },
+  {
+    "objectID": "posts/reward-functions-01/index.html#期望效用的缺陷",
+    "href": "posts/reward-functions-01/index.html#期望效用的缺陷",
+    "title": "奖励函数（一）：从期望效用到前景理论",
+    "section": "3 期望效用的缺陷",
+    "text": "3 期望效用的缺陷\n阿莱悖论 讲了期望、效用和主观感受的差异。比如，给你二选一，两个选择的结果是金钱，数额都很大，二者差了数倍，但是确定性也差了很多，一个钱少但（几乎）百分比确定，一个钱多但只有1/10可能。那么你怎么选？\n假如按照传统经济学理论，纯粹是风险厌恶在调节二者的效用，就选钱多的。\n那么继续做实验，还是二选一，一个金钱多得多，但是风险也大一点，测试者反而会选择风险更大的。\n风险厌恶理论无法解释这个现象。"
+  },
+  {
+    "objectID": "posts/reward-functions-01/index.html#前景理论",
+    "href": "posts/reward-functions-01/index.html#前景理论",
+    "title": "奖励函数（一）：从期望效用到前景理论",
+    "section": "4 前景理论",
+    "text": "4 前景理论\n有一种建模方式是前景理论（Prospect Theory），由丹尼尔·卡尼曼（Daniel Kahneman，《思考，快与慢》作者）和阿莫斯·特沃斯基（Amos Tversky）于 1979 年提出的行为经济学核心理论，有四个机制颠覆传统经济学理论：\n\n参照点依赖（Reference Dependence）：人们评估一件事情是好是坏，看的不是最终财富的绝对值，而是相对于“参照点”是赚了（Gain）还是亏了（Loss）。\n损失厌恶（Loss Aversion）：损失带来的痛苦感，远大于等额收益带来的快乐感。 实验表明，丢掉 100 块钱的痛苦程度，大约需要捡到 225 块钱的快乐才能平复（损失厌恶系数约为 2.25）。\n敏感度递减（Diminishing Sensitivity）：财富变动的边际心理感知是递减的。从 0 变成 100 块感受极其明显，但从 10,000 变成 10,100 块，心理波澜就很小了。\n非理性概率加权（Probability Weighting）：人们在心理上会高估极小概率事件（例如买彩票、买航空险），同时低估中高概率事件。\n\n具体到这个阿莱悖论，心理上的价值是\n\n\n\n前景理论的主观价值表达式\n\n\n其中，\\(w(p)\\) 是人们对概率的主观感受，\\(v\\) 是对效用的主观感受\n\n\n\n概率加权函数\n\n\n\n\n\n概率加权函数曲线\n\n\n这是 \\(\\gamma=0.5\\) 的时候的 \\(w(p)\\)，可以看到在首尾的斜率很高，加速趋近。\n\\(v(x)\\) 取一个边际递减的函数比如\n\n\n\n前景理论价值函数\n\n\n\n\n\n损失厌恶与敏感度递减曲线"
+  },
+  {
+    "objectID": "posts/reward-functions-01/index.html#未完待续",
+    "href": "posts/reward-functions-01/index.html#未完待续",
+    "title": "奖励函数（一）：从期望效用到前景理论",
+    "section": "5 未完待续",
+    "text": "5 未完待续"
   },
   {
     "objectID": "posts/substack-note-convergence-line/index.html",
