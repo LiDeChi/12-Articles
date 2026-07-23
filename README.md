@@ -33,7 +33,14 @@ quarto preview
 quarto publish gh-pages --no-browser
 ```
 
-`main` 分支保存源文件，`gh-pages` 分支保存渲染结果。首次发布后，推送到 `main` 会由 GitHub Actions 自动更新页面。
+`main` 分支中的 `posts/*/index.qmd` 是文章源文件，`gh-pages` 分支保存完整渲染结果。仓库原有 Pages 设置仍从 `main` 根目录读取，因此工作流还会把必要的 HTML、JSON 和静态运行文件同步回根目录；`.published-site-files` 记录这些生成物，避免它们成为第二份文章源。
+
+推送到 `main` 后，GitHub Actions 会自动更新两套发布输出。手动渲染后如需同步当前 Pages 根目录：
+
+```bash
+quarto render
+node scripts/sync-pages-root.mjs
+```
 
 ## 主页同步
 
