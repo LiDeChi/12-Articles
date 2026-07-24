@@ -40,6 +40,10 @@ function parseScalar(raw) {
   return value;
 }
 
+function stripNoteSequence(value) {
+  return String(value).replace(/^\d{3}\s+/u, "");
+}
+
 function parseDocument(source) {
   const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
   if (!match) {
@@ -353,7 +357,8 @@ for (const path of articleFiles) {
   const publishedAt = Date.parse(String(dateSort));
   if (Number.isFinite(publishedAt) && publishedAt > Date.now()) continue;
 
-  const fallbackId = basename(path, extname(path));
+  const fallbackTitle = stripNoteSequence(basename(path, extname(path)));
+  const fallbackId = fallbackTitle;
   const articleId = metadata["article-id"] || fallbackId;
   const articleUrl = `${siteUrl}/posts/${articleId}.html`;
   const zhMarkdown = extractLanguageBody(body, "zh");
@@ -369,8 +374,8 @@ for (const path of articleFiles) {
   articles.push({
     id: articleId,
     title: {
-      zh: metadata.title || fallbackId,
-      en: metadata["title-en"] || metadata.title || fallbackId,
+      zh: metadata.title || fallbackTitle,
+      en: metadata["title-en"] || metadata.title || fallbackTitle,
     },
     date: metadata["date-display"] || metadata.date || "",
     dateSort: metadata["date-sort"] || metadata.date || "",

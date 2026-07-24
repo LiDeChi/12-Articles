@@ -9,7 +9,9 @@ const projectRoot = fileURLToPath(new URL("..", import.meta.url));
 const postsRoot = join(projectRoot, "posts");
 const errors = [];
 const articleIds = new Set();
+const articleSequences = new Set();
 const publishedArticles = [];
+const numberedNotePattern = /^(\d{3}) (.+)\.md$/u;
 
 function parseScalar(raw) {
   const value = raw.trim();
@@ -52,7 +54,25 @@ for (const entry of readdirSync(postsRoot, { withFileTypes: true })) {
     continue;
   }
 
+  const filenameMatch = entry.name.match(numberedNotePattern);
+  if (!filenameMatch) {
+    errors.push(`文章文件名缺少三位序号：posts/${entry.name}`);
+  } else if (articleSequences.has(filenameMatch[1])) {
+    errors.push(`文章序号重复：${filenameMatch[1]}`);
+  } else {
+    articleSequences.add(filenameMatch[1]);
+  }
+
   const metadata = metadataFor(path);
+  const title = metadata.title;
+  if (!title) {
+    errors.push(`缺少公开标题 title：posts/${entry.name}`);
+  } else if (filenameMatch && title.startsWith(`${filenameMatch[1]} `)) {
+    errors.push(
+      `front matter 的 title 不应包含 Obsidian 序号：posts/${entry.name}`,
+    );
+  }
+
   const articleId = metadata["article-id"];
   if (!articleId) {
     errors.push(`缺少 article-id：posts/${entry.name}`);
@@ -96,5 +116,7 @@ if (errors.length) {
   console.error(errors.map((error) => `- ${error}`).join("\n"));
   process.exitCode = 1;
 } else {
-  console.log(`内容检查通过：${articleIds.size} 篇扁平 Markdown 笔记。`);
+  console.log(
+    `内容检查通过：${articleIds.size} 篇带稳定序号的扁平 Markdown 笔记。`,
+  );
 }
