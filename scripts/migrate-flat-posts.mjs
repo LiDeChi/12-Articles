@@ -125,7 +125,11 @@ for (const entry of readdirSync(postsRoot, { withFileTypes: true })) {
   const source = readFileSync(currentPath, "utf8");
   const articleId = metadataValue(source, "article-id") || entry.name.slice(0, -3);
   const title = metadataValue(source, "title") || articleId;
-  const expectedName = safeNoteName(title, articleId);
+  const sequencePrefix = entry.name.match(/^(\d{3})\s+/u)?.[1];
+  const noteName = safeNoteName(title, articleId);
+  const expectedName = sequencePrefix
+    ? `${sequencePrefix} ${noteName}`
+    : noteName;
   if (entry.name === expectedName) continue;
 
   const targetPath = join(postsRoot, expectedName);
