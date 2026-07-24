@@ -2,7 +2,9 @@ project:
   type: website
   render:
     - "*.qmd"
-    - "posts/**/*.qmd"
+    - "posts/*.md"
+  pre-render:
+    - "node scripts/check-content.mjs"
   post-render:
     - "node scripts/export-manifest.mjs"
 
@@ -14,6 +16,7 @@ website:
   repo-actions: [source]
   favicon: "assets/favicon.svg"
   search: true
+  draft-mode: gone
   open-graph: true
   twitter-card: true
   navbar:

@@ -1,7 +1,7 @@
 ---
 title: "文章"
 listing:
-  contents: posts
+  contents: "posts/*.md"
   sort: "date desc"
   type: default
   categories: true
@@ -15,4 +15,4 @@ page-layout: full
 
 这里记录我关于数学、人工智能、Agent、强化学习和认知科学的研究与思考。
 
-长文、研究札记与已经形成明确问题的草稿，都以独立文章目录保存；主题关系由分类连接，不再依赖越来越深的文件夹。
+`posts/` 中每个 Markdown 文件就是一篇 Obsidian 笔记。长文、研究札记与草稿保持扁平存放，主题关系由分类连接；未来日期内容默认作为草稿，不提前出现在网站上。

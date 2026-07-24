@@ -4,7 +4,7 @@ import {
   readdirSync,
   writeFileSync,
 } from "node:fs";
-import { dirname, join, relative, resolve } from "node:path";
+import { basename, extname, join, relative, resolve } from "node:path";
 
 const projectRoot = resolve(import.meta.dirname, "..");
 const postsRoot = join(projectRoot, "posts");
@@ -261,16 +261,8 @@ function pairBlocks(zhBlocks, enBlocks) {
 }
 
 const articleFiles = readdirSync(postsRoot, { withFileTypes: true })
-  .filter((entry) => entry.isDirectory())
-  .map((entry) => join(postsRoot, entry.name, "index.qmd"))
-  .filter((path) => {
-    try {
-      readFileSync(path);
-      return true;
-    } catch {
-      return false;
-    }
-  });
+  .filter((entry) => entry.isFile() && extname(entry.name) === ".md")
+  .map((entry) => join(postsRoot, entry.name));
 
 const articles = [];
 
@@ -279,8 +271,13 @@ for (const path of articleFiles) {
   const { metadata, body } = parseDocument(source);
   if (metadata.draft === true) continue;
 
-  const slug = relative(postsRoot, dirname(path)).replaceAll("\\", "/");
-  const articleUrl = `${siteUrl}/posts/${slug}/`;
+  const dateSort = metadata["date-sort"] || metadata.date || "";
+  const publishedAt = Date.parse(String(dateSort));
+  if (Number.isFinite(publishedAt) && publishedAt > Date.now()) continue;
+
+  const fallbackId = basename(path, extname(path));
+  const articleId = metadata["article-id"] || fallbackId;
+  const articleUrl = `${siteUrl}/posts/${articleId}.html`;
   const zhMarkdown = extractLanguageBody(body, "zh");
   const enMarkdown = extractLanguageBody(body, "en");
   const zhBlocks = parseBlocks(zhMarkdown, articleUrl);
@@ -292,10 +289,10 @@ for (const path of articleFiles) {
     : [];
 
   articles.push({
-    id: metadata["article-id"] || slug,
+    id: articleId,
     title: {
-      zh: metadata.title || slug,
-      en: metadata["title-en"] || metadata.title || slug,
+      zh: metadata.title || fallbackId,
+      en: metadata["title-en"] || metadata.title || fallbackId,
     },
     date: metadata["date-display"] || metadata.date || "",
     dateSort: metadata["date-sort"] || metadata.date || "",
