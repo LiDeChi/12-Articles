@@ -1,10 +1,18 @@
 import {
+  existsSync,
   mkdirSync,
   readFileSync,
   readdirSync,
   writeFileSync,
 } from "node:fs";
-import { basename, extname, join, relative, resolve } from "node:path";
+import {
+  basename,
+  dirname,
+  extname,
+  join,
+  relative,
+  resolve,
+} from "node:path";
 
 const projectRoot = resolve(import.meta.dirname, "..");
 const postsRoot = join(projectRoot, "posts");
@@ -112,7 +120,72 @@ function cleanInline(text) {
   );
 }
 
-function parseBlocks(markdown, articleUrl) {
+function readImageDimensions(sourcePath, imageHref) {
+  if (/^(?:https?:|data:)/i.test(imageHref)) return null;
+
+  const cleanHref = decodeURIComponent(imageHref.split(/[?#]/, 1)[0]);
+  const imagePath = resolve(dirname(sourcePath), cleanHref);
+  if (!existsSync(imagePath)) return null;
+
+  const bytes = readFileSync(imagePath);
+  const isPng =
+    bytes.length >= 24 &&
+    bytes[0] === 0x89 &&
+    bytes.subarray(1, 4).toString("ascii") === "PNG";
+  if (isPng) {
+    return {
+      width: bytes.readUInt32BE(16),
+      height: bytes.readUInt32BE(20),
+    };
+  }
+
+  const isJpeg =
+    bytes.length >= 4 && bytes[0] === 0xff && bytes[1] === 0xd8;
+  if (!isJpeg) return null;
+
+  const startOfFrameMarkers = new Set([
+    0xc0,
+    0xc1,
+    0xc2,
+    0xc3,
+    0xc5,
+    0xc6,
+    0xc7,
+    0xc9,
+    0xca,
+    0xcb,
+    0xcd,
+    0xce,
+    0xcf,
+  ]);
+  let offset = 2;
+  while (offset + 8 < bytes.length) {
+    if (bytes[offset] !== 0xff) {
+      offset += 1;
+      continue;
+    }
+
+    const marker = bytes[offset + 1];
+    if (marker === 0xd8 || marker === 0xd9) {
+      offset += 2;
+      continue;
+    }
+
+    const segmentLength = bytes.readUInt16BE(offset + 2);
+    if (startOfFrameMarkers.has(marker)) {
+      return {
+        width: bytes.readUInt16BE(offset + 7),
+        height: bytes.readUInt16BE(offset + 5),
+      };
+    }
+    if (segmentLength < 2) break;
+    offset += segmentLength + 2;
+  }
+
+  return null;
+}
+
+function parseBlocks(markdown, articleUrl, sourcePath) {
   const lines = markdown.split(/\r?\n/);
   const blocks = [];
   let index = 0;
@@ -164,11 +237,13 @@ function parseBlocks(markdown, articleUrl) {
       const src = /^https?:\/\//.test(image[2])
         ? image[2]
         : new URL(image[2], articleUrl).toString();
+      const dimensions = readImageDimensions(sourcePath, image[2]);
       blocks.push({
         type: "figure",
         src,
         alt: cleanInline(image[1]),
         caption,
+        ...(dimensions || {}),
       });
       continue;
     }
@@ -237,6 +312,9 @@ function pairBlocks(zhBlocks, enBlocks) {
           zh: zhBlock.caption,
           en: enBlock.caption || zhBlock.caption,
         },
+        ...(zhBlock.width && zhBlock.height
+          ? { width: zhBlock.width, height: zhBlock.height }
+          : {}),
       };
     }
 
@@ -280,9 +358,9 @@ for (const path of articleFiles) {
   const articleUrl = `${siteUrl}/posts/${articleId}.html`;
   const zhMarkdown = extractLanguageBody(body, "zh");
   const enMarkdown = extractLanguageBody(body, "en");
-  const zhBlocks = parseBlocks(zhMarkdown, articleUrl);
+  const zhBlocks = parseBlocks(zhMarkdown, articleUrl, path);
   const enBlocks = enMarkdown
-    ? parseBlocks(enMarkdown, articleUrl)
+    ? parseBlocks(enMarkdown, articleUrl, path)
     : zhBlocks;
   const categories = Array.isArray(metadata.categories)
     ? metadata.categories
