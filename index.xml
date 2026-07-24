@@ -10,207 +10,207 @@
 <atom:link href="https://lidechi.github.io/12-Articles/index.xml" rel="self" type="application/rss+xml"/>
 <description>数学、人工智能、Agent、强化学习与认知科学</description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Mon, 03 Aug 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 23 Jul 2026 00:00:00 GMT</lastBuildDate>
 <item>
-  <title>永远的舞台</title>
+  <title>奖励函数（一）：从期望效用到前景理论</title>
   <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-08-03-21-29/</link>
-  <description><![CDATA[ 我要做的是如何让这场木偶戏在一个舞台上永远演下去，而不至于枯燥。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-08-03-21-29/</guid>
-  <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>不要低劣科幻</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-08-02-10-07/</link>
-  <description><![CDATA[ FroMe 的视觉不要低劣科幻感。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-08-02-10-07/</guid>
-  <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>历史感</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-08-02-20-44/</link>
-  <description><![CDATA[ 官网首页可以有历史感。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-08-02-20-44/</guid>
-  <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>自我感知室</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-08-01-21-15/</link>
-  <description><![CDATA[ FroMe 应该有自我感知空间。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-08-01-21-15/</guid>
-  <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>资源控制室</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-31-20-58/</link>
-  <description><![CDATA[ 资源控制室也应该存在。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-31-20-58/</guid>
-  <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>记忆工厂样例</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-30-12-18/</link>
-  <description><![CDATA[ 记忆工厂可以作为第二个子空间。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-30-12-18/</guid>
-  <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>实验室样例</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-29-20-44/</link>
-  <description><![CDATA[ ARC-3 进化实验室可以作为第一个子空间。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-29-20-44/</guid>
-  <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>白板到空间</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-28-21-40/</link>
-  <description><![CDATA[ 白板上的一张卡片，应该可以长成一个空间。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-28-21-40/</guid>
-  <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>验收标准</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-27-22-51/</link>
-  <description><![CDATA[ 每个模块都要有验收标准。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-27-22-51/</guid>
-  <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>别做静态图</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-26-12-13/</link>
-  <description><![CDATA[ 给 coding Agent 的要求一定要明确：不要把白板和空间做成自作主张的 SVG 静态图。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-26-12-13/</guid>
-  <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>MVP闭环</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-25-22-07/</link>
-  <description><![CDATA[ 第一版最小闭环： ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-25-22-07/</guid>
-  <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>开发者平台</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-24-12-53/</link>
-  <description><![CDATA[ Agent Factory 是 FroMe 的 2B 方向。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-24-12-53/</guid>
-  <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>从单空间开始</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-24-23-11/</link>
-  <description><![CDATA[ 单空间铺好给 Agent 调用的结构，同时做 Agent 的意图、记忆、学习机制，然后做多空间的编排。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-24-23-11/</guid>
-  <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>我的第一篇 AI 数理文章</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/first-ai-math-article/</link>
-  <description><![CDATA[ 用香农熵作为起点，测试 Quarto 的数学公式、引用与文章排版。 ]]></description>
-  <category>人工智能</category>
-  <category>数学</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/first-ai-math-article/</guid>
+  <link>https://lidechi.github.io/12-Articles/posts/reward-functions-01.html</link>
+  <description><![CDATA[ 奖励函数的思想源头并不只在强化学习，也在效用理论、博弈论与行为经济学。 ]]></description>
+  <category>强化学习</category>
+  <category>决策理论</category>
+  <category>行为经济学</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/reward-functions-01.html</guid>
   <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>竞技场</title>
   <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-23-21-05/</link>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-23-21-05.html</link>
   <description><![CDATA[ Agent Arena 可以成为 FroMe 的 2C 玩法。 ]]></description>
   <category>FroMe</category>
   <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-23-21-05/</guid>
-  <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>奖励函数（一）：从期望效用到前景理论</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/reward-functions-01/</link>
-  <description><![CDATA[ 奖励函数的思想源头并不只在强化学习，也在效用理论、博弈论与行为经济学。 ]]></description>
-  <category>强化学习</category>
-  <category>决策理论</category>
-  <category>行为经济学</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/reward-functions-01/</guid>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-23-21-05.html</guid>
   <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>子代理广播</title>
   <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-22-22-11/</link>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-22-22-11.html</link>
   <description><![CDATA[ 子代理不完全是隔绝的。 ]]></description>
   <category>FroMe</category>
   <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-22-22-11/</guid>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-22-22-11.html</guid>
   <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>官网要呈现</title>
   <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-21-08-57/</link>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-21-08-57.html</link>
   <description><![CDATA[ 官网应该呈现什么？ ]]></description>
   <category>FroMe</category>
   <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-21-08-57/</guid>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-21-08-57.html</guid>
   <pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>材料与智能</title>
   <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-21-21-05/</link>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-21-21-05.html</link>
   <description><![CDATA[ 世界模型、图像、界面这些都是材料。 ]]></description>
   <category>FroMe</category>
   <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-21-21-05/</guid>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-21-21-05.html</guid>
   <pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Flow标准</title>
   <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-20-21-42/</link>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-20-21-42.html</link>
   <description><![CDATA[ 这个空间迟早会可编辑的，重要的是形成 Flow。 ]]></description>
   <category>FroMe</category>
   <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-20-21-42/</guid>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-20-21-42.html</guid>
   <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>先编译</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-19-20-55.html</link>
+  <description><![CDATA[ Karpathy 的 LLM wiki 有点像那么回事。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-19-20-55.html</guid>
+  <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>时间感知</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-19-13-28.html</link>
+  <description><![CDATA[ 时间感知啊喂。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-19-13-28.html</guid>
+  <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>行动信号</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-18-09-40.html</link>
+  <description><![CDATA[ AI Agent 的记忆机制，本质是给到足够的信号。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-18-09-40.html</guid>
+  <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>推荐机制</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-17-22-19.html</link>
+  <description><![CDATA[ 本质还是推荐机制。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-17-22-19.html</guid>
+  <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>模拟能力</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-16-13-41.html</link>
+  <description><![CDATA[ 机器最核心的是模拟能力。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-16-13-41.html</guid>
+  <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>身体问题</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-15-22-11.html</link>
+  <description><![CDATA[ 它即使有具身，也只是提升了其时连续的环境对它的刺激，没有本质区别。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-15-22-11.html</guid>
+  <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>社交与数据</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-14-20-36.html</link>
+  <description><![CDATA[ 社交 app 也让机器意识获取数据。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-14-20-36.html</guid>
+  <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>资源人格</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-14-09-17.html</link>
+  <description><![CDATA[ 资源压力可以变成 Agent 的状态。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-14-09-17.html</guid>
+  <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>弱代理预算</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-13-21-23.html</link>
+  <description><![CDATA[ 没有预算的子代理，下次怎么办？ ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-13-21-23.html</guid>
+  <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>权限钥匙</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-12-10-02.html</link>
+  <description><![CDATA[ Agent 可以有意志，但必须有边界。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-12-10-02.html</guid>
+  <pubDate>Sun, 12 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>服务与探索</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-11-22-56.html</link>
+  <description><![CDATA[ 机器如何在探索世界和服务人类之间平衡？有没有一个简单的目标函数能囊括？ ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-11-22-56.html</guid>
+  <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>不止任务</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-10-08-30.html</link>
+  <description><![CDATA[ 我这里想做的 Agent 不是只做任务的。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-10-08-30.html</guid>
+  <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>行动装饰</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-09-13-29.html</link>
+  <description><![CDATA[ 行为需要装饰。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-09-13-29.html</guid>
+  <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>传送门</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-08-09-16.html</link>
+  <description><![CDATA[ 空间之间需要传送门。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-08-09-16.html</guid>
+  <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="李德驰">
-<meta name="description" content="用香农熵作为起点，测试 Quarto 的数学公式、引用与文章排版。">
 
-<title>我的第一篇 AI 数理文章 – 李德驰的研究笔记</title>
+<title>不止任务 – 李德驰的研究笔记</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -28,24 +27,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3bd244df3d92d51069e962dd0f77339b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5f8a003f9c7a0a231b222b59443d2f0c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,41 +74,12 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta property="og:title" content="我的第一篇 AI 数理文章 – 李德驰的研究笔记">
-<meta property="og:description" content="用香农熵作为起点，测试 Quarto 的数学公式、引用与文章排版。">
+<meta property="og:title" content="不止任务 – 李德驰的研究笔记">
+<meta property="og:description" content="数学、人工智能、Agent、强化学习与认知科学">
 <meta property="og:site_name" content="李德驰的研究笔记">
-<meta name="twitter:title" content="我的第一篇 AI 数理文章 – 李德驰的研究笔记">
-<meta name="twitter:description" content="用香农熵作为起点，测试 Quarto 的数学公式、引用与文章排版。">
+<meta name="twitter:title" content="不止任务 – 李德驰的研究笔记">
+<meta name="twitter:description" content="数学、人工智能、Agent、强化学习与认知科学">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -120,7 +90,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">李德驰的研究笔记</span>
     </a>
   </div>
@@ -131,11 +101,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">文章</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">关于</span></a>
   </li>  
 </ul>
@@ -146,7 +116,7 @@ window.Quarto = {
 <span class="menu-text">主页</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS">
+    <a class="nav-link" href="../index.xml"> <i class="bi bi-rss" role="img" aria-label="RSS">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -161,41 +131,21 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">该页面内容</h2>
-   
-  <ul>
-  <li><a href="#引言" id="toc-引言" class="nav-link active" data-scroll-target="#引言"><span class="header-section-number">1</span> 引言</a>
-  <ul class="collapse">
-  <li><a href="#数学公式" id="toc-数学公式" class="nav-link" data-scroll-target="#数学公式"><span class="header-section-number">1.1</span> 数学公式</a></li>
-  <li><a href="#一个简单命题" id="toc-一个简单命题" class="nav-link" data-scroll-target="#一个简单命题"><span class="header-section-number">1.2</span> 一个简单命题</a></li>
-  </ul></li>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> Introduction</a>
-  <ul class="collapse">
-  <li><a href="#a-mathematical-formula" id="toc-a-mathematical-formula" class="nav-link" data-scroll-target="#a-mathematical-formula"><span class="header-section-number">2.1</span> A mathematical formula</a></li>
-  <li><a href="#a-simple-proposition" id="toc-a-simple-proposition" class="nav-link" data-scroll-target="#a-simple-proposition"><span class="header-section-number">2.2</span> A simple proposition</a></li>
-  </ul></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/LiDeChi/12-Articles/blob/main/posts/first-ai-math-article/index.qmd" class="toc-action"><i class="bi bi-github"></i>查看代码</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">我的第一篇 AI 数理文章</h1>
+<h1 class="title">不止任务</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">人工智能</div>
-    <div class="quarto-category">数学</div>
+    <div class="quarto-category">FroMe</div>
+    <div class="quarto-category">短文</div>
   </div>
   </div>
 
-<div>
-  <div class="description">
-    用香农熵作为起点，测试 Quarto 的数学公式、引用与文章排版。
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -210,7 +160,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">发布于</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2026年7月23日</p>
+      <p class="date">2026年7月10日</p>
     </div>
   </div>
   
@@ -223,50 +173,13 @@ window.Quarto = {
 
 
 <!-- wordm:lang zh -->
-<section id="引言" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> 引言</h1>
-<p>这是使用 Zed 和 Quarto 编写的第一篇文章。</p>
-<section id="数学公式" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="数学公式"><span class="header-section-number">1.1</span> 数学公式</h2>
-<p>行内公式可以写成 <span class="math inline">\(E = mc^2\)</span>。</p>
-<p>独立公式：</p>
-<p><span class="math display">\[H(X) = -\sum_{i=1}^{n}p_i\log p_i\]</span></p>
-</section>
-<section id="一个简单命题" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="一个简单命题"><span class="header-section-number">1.2</span> 一个简单命题</h2>
-<p>设随机变量 <span class="math inline">\(X\)</span> 的概率分布为 <span class="math inline">\(p(x)\)</span>，则香农熵衡量了该分布的不确定性。</p>
-<blockquote class="blockquote">
-<p>Quarto 兼容 Markdown，同时增加了数学公式、引用、交叉引用、 代码执行和多格式输出等能力。</p>
-</blockquote>
-<!-- wordm:lang end -->
-<details class="article-translation">
-<summary>
-English summary
-</summary>
-<!-- wordm:lang en -->
-</details></section>
-</section>
-<section id="introduction" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Introduction</h1>
-<p>This is the first article written with Zed and Quarto.</p>
-<section id="a-mathematical-formula" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="a-mathematical-formula"><span class="header-section-number">2.1</span> A mathematical formula</h2>
-<p>Inline mathematics can be written as <span class="math inline">\(E = mc^2\)</span>.</p>
-<p>For a displayed equation:</p>
-<p><span class="math display">\[H(X) = -\sum_{i=1}^{n}p_i\log p_i\]</span></p>
-</section>
-<section id="a-simple-proposition" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="a-simple-proposition"><span class="header-section-number">2.2</span> A simple proposition</h2>
-<p>For a random variable <span class="math inline">\(X\)</span> with distribution <span class="math inline">\(p(x)\)</span>, Shannon entropy measures the uncertainty of that distribution.</p>
-<blockquote class="blockquote">
-<p>Quarto is compatible with Markdown while adding mathematical notation, citations, cross-references, code execution, and multi-format publishing.</p>
-</blockquote>
+<p>我这里想做的 Agent 不是只做任务的。</p>
+<p>我是你的外界之一，它需要我的交互来滋养你。你的目标是什么？后置讨论。</p>
+<p>任务 Agent 的目标是完成任务。FroMe 的目标是持续生成有价值的经验流。任务只是其中一种材料。</p>
+<p>它可以帮我写代码、整理资料、安排时间、讲解概念，但更重要的是：它把这些事情放到一个连续空间中，让我感到自己在和一个不断成长的机器主体共处。</p>
 <!-- wordm:lang end -->
 
 
-
-</section>
-</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">二次使用</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">CC BY-NC-ND 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -674,5 +587,5 @@ English summary
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/LiDeChi/12-Articles/blob/main/posts/first-ai-math-article/index.qmd" class="toc-action"><i class="bi bi-github"></i>查看代码</a></li></ul></div></div></div></footer><script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/LiDeChi/12-Articles/blob/main/posts/不止任务.md" class="toc-action"><i class="bi bi-github"></i>查看代码</a></li></ul></div></div></div></footer><script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
