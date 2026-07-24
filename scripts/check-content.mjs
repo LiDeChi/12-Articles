@@ -1,5 +1,4 @@
 import {
-  existsSync,
   readFileSync,
   readdirSync,
 } from "node:fs";
@@ -43,9 +42,7 @@ for (const entry of readdirSync(postsRoot, { withFileTypes: true })) {
 
   const path = join(postsRoot, entry.name);
   if (entry.isDirectory()) {
-    if (existsSync(join(path, "index.qmd")) || existsSync(join(path, "index.md"))) {
-      errors.push(`文章仍套在目录中：posts/${entry.name}/`);
-    }
+    errors.push(`posts/ 不允许出现子目录：posts/${entry.name}/`);
     continue;
   }
 
