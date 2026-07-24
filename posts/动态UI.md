@@ -1,0 +1,35 @@
+---
+title: "动态UI"
+title-en: "动态UI"
+description: ""
+description-en: ""
+date: 2026-06-20
+date-sort: "2026-06-20T20:45:00+08:00"
+date-display: "2026.06.20 20:45"
+category: "FroMe"
+category-en: "FroMe"
+categories:
+  - "FroMe"
+  - "短文"
+article-id: "frome-2026-06-20-20-45"
+source: "x"
+source-url-original: null
+original-published-at: "2026-06-20 20:45"
+note: ""
+note-en: ""
+output-file: "frome-2026-06-20-20-45.html"
+aliases:
+  - "/posts/frome-2026-06-20-20-45/index.html"
+---
+
+<!-- wordm:lang zh -->
+
+要记得 dynamic UI，但它应该在空间里动态生成。
+
+不排除有 UI，但主要的是场景化。UI 负责精确操作，空间负责意义表达。
+
+必须保留一些习惯，比如不能在左右阅读顺序之间反复横跳。中央是空间，右侧是对话和对象属性，底部是输入与快捷操作，左侧可以是空间图谱或记忆导航。
+
+动态 UI 不是随机出现的按钮，而是由空间对象触发。点击白板卡片，右侧出现卡片详情；点击资源仪表，出现预算；点击门，出现可进入空间。
+
+<!-- wordm:lang end -->

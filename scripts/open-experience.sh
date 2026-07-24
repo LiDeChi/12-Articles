@@ -95,14 +95,12 @@ if lsof -nP -iTCP:"$PORT" -sTCP:LISTEN >/dev/null 2>&1; then
 fi
 
 trap cleanup EXIT INT TERM
-# Quarto preview removes root-level generated files tracked for the repository's
-# legacy Pages setting, so run it in an isolated staging directory.
+# Keep preview caches and generated output away from the Obsidian source tree.
 PREVIEW_DIR="$(mktemp -d "${TMPDIR:-/tmp}/codex-12-articles-preview.XXXXXX")"
 rsync -a \
   --exclude=".git/" \
   --exclude=".quarto/" \
   --exclude="_site/" \
-  --exclude-from="$WORKTREE_PATH/.published-site-files" \
   "$WORKTREE_PATH/" "$PREVIEW_DIR/"
 printf '%s\n' "$WORKTREE_PATH" > "$PREVIEW_DIR/.codex-source-worktree"
 cd "$PREVIEW_DIR"
@@ -110,7 +108,7 @@ cd "$PREVIEW_DIR"
 quarto preview --host "$HOST" --port "$PORT" --no-browser &
 SERVER_PID=$!
 
-for _ in $(seq 1 120); do
+for _ in $(seq 1 480); do
   if is_project_server; then
     open_experience
     wait "$SERVER_PID"

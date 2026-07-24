@@ -27,17 +27,3 @@ jobs:
           render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Sync the existing Pages root
-        run: node scripts/sync-pages-root.mjs
-
-      - name: Commit generated Pages files
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- .published-site-files .nojekyll about.html articles.json index.html index.xml listings.json robots.txt search.json sitemap.xml site_libs posts
-          if git diff --cached --quiet; then
-            exit 0
-          fi
-          git commit -m "chore: refresh published article site [skip ci]"
-          git push origin HEAD:main

@@ -5,19 +5,22 @@
 - Quarto / GitHub Pages：<https://lidechi.github.io/12-Articles/>
 - 主页博客：<https://wordm.us/blog/>
 
-## 目录约定
+## 笔记约定
 
-每篇文章使用一个稳定的小写英文目录：
+`posts/` 是文章的唯一源目录，每篇文章就是一份 Obsidian 可直接编辑的 Markdown 笔记：
 
 ```text
 posts/
-└── article-slug/
-    ├── index.qmd
-    ├── cover.png
-    └── figures/
+├── 大世界中的 Agent System.md
+├── 奖励函数（一）：从期望效用到前景理论.md
+└── 其他文章.md
+
+assets/articles/
+├── large-world-agent-system/
+└── reward-functions-01/
 ```
 
-主题使用 `categories` 元数据，不建立“数学 / Agent / 认知科学”多层目录。草稿在文章 front matter 中设置 `draft: true`。
+文件名用于 Obsidian 阅读，稳定网址由 front matter 中的 `article-id` 和 `output-file` 决定。图片统一存放在 `assets/articles/<article-id>/`。主题使用 `categories` 元数据，不建立“数学 / Agent / 认知科学”多层目录。草稿在文章 front matter 中设置 `draft: true`；未来日期文章必须先保持草稿状态。
 
 ## 本地预览
 
@@ -33,13 +36,12 @@ quarto preview
 quarto publish gh-pages --no-browser
 ```
 
-`main` 分支中的 `posts/*/index.qmd` 是文章源文件，`gh-pages` 分支保存完整渲染结果。仓库原有 Pages 设置仍从 `main` 根目录读取，因此工作流还会把必要的 HTML、JSON 和静态运行文件同步回根目录；`.published-site-files` 记录这些生成物，避免它们成为第二份文章源。
+`main` 分支中的 `posts/*.md` 是文章源文件，`gh-pages` 分支只保存渲染结果。生成的 HTML、JSON 和运行文件不会再写回 Obsidian 源目录。
 
-推送到 `main` 后，GitHub Actions 会自动更新两套发布输出。手动渲染后如需同步当前 Pages 根目录：
+推送到 `main` 后，GitHub Actions 会自动更新 GitHub Pages。提交前可运行内容检查：
 
 ```bash
-quarto render
-node scripts/sync-pages-root.mjs
+node scripts/check-content.mjs
 ```
 
 ## 主页同步
