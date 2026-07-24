@@ -9,6 +9,7 @@ const projectRoot = fileURLToPath(new URL("..", import.meta.url));
 const postsRoot = join(projectRoot, "posts");
 const errors = [];
 const articleIds = new Set();
+const publishedArticles = [];
 
 function parseScalar(raw) {
   const value = raw.trim();
@@ -66,6 +67,8 @@ for (const entry of readdirSync(postsRoot, { withFileTypes: true })) {
     const publishedAt = Date.parse(dateSort);
     if (Number.isFinite(publishedAt) && publishedAt > Date.now()) {
       errors.push(`未来文章没有标记为草稿：${articleId || entry.name}`);
+    } else {
+      publishedArticles.push({ articleId, dateSort });
     }
   }
 }
@@ -76,6 +79,17 @@ if (!articleIds.has("large-world-agent-system")) {
 
 if (articleIds.has("first-ai-math-article")) {
   errors.push("已删除的测试文章仍在源文件中：first-ai-math-article");
+}
+
+publishedArticles.sort((left, right) =>
+  String(right.dateSort).localeCompare(String(left.dateSort)),
+);
+if (publishedArticles[1]?.articleId !== "large-world-agent-system") {
+  errors.push(
+    `“大世界中的 Agent System”必须是第二篇公开文章，当前第二篇是：${
+      publishedArticles[1]?.articleId || "无"
+    }`,
+  );
 }
 
 if (errors.length) {

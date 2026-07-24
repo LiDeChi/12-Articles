@@ -3,9 +3,9 @@ title: "大世界中的 Agent System"
 title-en: "Agent Systems in a Large World"
 description: "一个生成 agent loop 的系统，不只是制造子代理，而是管理资源、历史、注意力、tick、感知、协作和消亡。"
 description-en: "A system that generates agent loops, not merely child agents, and manages resources, history, attention, ticks, perception, collaboration, and disappearance."
-date: 2026-06-29
-date-sort: "2026-06-29T12:00:00+08:00"
-date-display: "2026.06.29"
+date: 2026-07-23
+date-sort: "2026-07-23T18:53:00+08:00"
+date-display: "2026.07.23"
 category: "Agent System"
 category-en: "Agent System"
 categories:
