@@ -12,15 +12,6 @@
 <generator>quarto-1.9.38</generator>
 <lastBuildDate>Thu, 23 Jul 2026 00:00:00 GMT</lastBuildDate>
 <item>
-  <title>大世界中的 Agent System</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/large-world-agent-system.html</link>
-  <description><![CDATA[ 一个生成 agent loop 的系统，不只是制造子代理，而是管理资源、历史、注意力、tick、感知、协作和消亡。 ]]></description>
-  <category>Agent System</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/large-world-agent-system.html</guid>
-  <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
   <title>奖励函数（一）：从期望效用到前景理论</title>
   <dc:creator>李德驰 </dc:creator>
   <link>https://lidechi.github.io/12-Articles/posts/reward-functions-01.html</link>
@@ -29,6 +20,15 @@
   <category>决策理论</category>
   <category>行为经济学</category>
   <guid>https://lidechi.github.io/12-Articles/posts/reward-functions-01.html</guid>
+  <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>大世界中的 Agent System</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/large-world-agent-system.html</link>
+  <description><![CDATA[ 一个生成 agent loop 的系统，不只是制造子代理，而是管理资源、历史、注意力、tick、感知、协作和消亡。 ]]></description>
+  <category>Agent System</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/large-world-agent-system.html</guid>
   <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
@@ -82,16 +82,6 @@
   <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>先编译</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-19-20-55.html</link>
-  <description><![CDATA[ Karpathy 的 LLM wiki 有点像那么回事。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-19-20-55.html</guid>
-  <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
   <title>时间感知</title>
   <dc:creator>李德驰 </dc:creator>
   <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-19-13-28.html</link>
@@ -99,6 +89,16 @@
   <category>FroMe</category>
   <category>短文</category>
   <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-19-13-28.html</guid>
+  <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>先编译</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-19-20-55.html</link>
+  <description><![CDATA[ Karpathy 的 LLM wiki 有点像那么回事。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-19-20-55.html</guid>
   <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
@@ -142,16 +142,6 @@
   <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>社交与数据</title>
-  <dc:creator>李德驰 </dc:creator>
-  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-14-20-36.html</link>
-  <description><![CDATA[ 社交 app 也让机器意识获取数据。 ]]></description>
-  <category>FroMe</category>
-  <category>短文</category>
-  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-14-20-36.html</guid>
-  <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
   <title>资源人格</title>
   <dc:creator>李德驰 </dc:creator>
   <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-14-09-17.html</link>
@@ -159,6 +149,16 @@
   <category>FroMe</category>
   <category>短文</category>
   <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-14-09-17.html</guid>
+  <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>社交与数据</title>
+  <dc:creator>李德驰 </dc:creator>
+  <link>https://lidechi.github.io/12-Articles/posts/frome-2026-07-14-20-36.html</link>
+  <description><![CDATA[ 社交 app 也让机器意识获取数据。 ]]></description>
+  <category>FroMe</category>
+  <category>短文</category>
+  <guid>https://lidechi.github.io/12-Articles/posts/frome-2026-07-14-20-36.html</guid>
   <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 <item>

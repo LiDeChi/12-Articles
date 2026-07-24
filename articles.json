@@ -4564,33 +4564,6 @@
     "originalPublishedAt": "2026-06-05 21:21"
   },
   {
-    "id": "substack-note-function-families",
-    "title": {
-      "zh": "AI时代，以函数族而非函数的思想行事",
-      "en": "In the AI Era, Think in Function Families, Not Single Functions"
-    },
-    "date": "2026.03.17",
-    "dateSort": "2026-03-17T12:00:00+08:00",
-    "category": {
-      "zh": "短帖",
-      "en": "Note"
-    },
-    "summary": {
-      "zh": "把 AI 时代的能力设计理解成可组合、可迁移的一组函数，而不是孤立的单点函数。",
-      "en": "Treat capability design in the AI era as a composable, transferable family of functions rather than isolated single points."
-    },
-    "note": {
-      "zh": "把能力理解成一组可组合、可迁移的函数，会比盯着单个函数更接近 AI 时代的工作方式。",
-      "en": "Capability design works better as a composable, transferable family of functions than as isolated single functions."
-    },
-    "paragraphs": [],
-    "blocks": [],
-    "source": "substack",
-    "sourceUrl": "https://lidechi.github.io/12-Articles/posts/substack-note-function-families.html",
-    "originalSourceUrl": "https://substack.com/%40parson1/note/c-229003400",
-    "originalPublishedAt": "2026-03-17 07:35 UTC"
-  },
-  {
     "id": "substack-note-project-skill-memory",
     "title": {
       "zh": "项目经验和skill经验同时沉淀，前者宏观，后者微观",
@@ -4616,6 +4589,33 @@
     "sourceUrl": "https://lidechi.github.io/12-Articles/posts/substack-note-project-skill-memory.html",
     "originalSourceUrl": "https://substack.com/%40parson1/note/c-229003041",
     "originalPublishedAt": "2026-03-17 07:34 UTC"
+  },
+  {
+    "id": "substack-note-function-families",
+    "title": {
+      "zh": "AI时代，以函数族而非函数的思想行事",
+      "en": "In the AI Era, Think in Function Families, Not Single Functions"
+    },
+    "date": "2026.03.17",
+    "dateSort": "2026-03-17T12:00:00+08:00",
+    "category": {
+      "zh": "短帖",
+      "en": "Note"
+    },
+    "summary": {
+      "zh": "把 AI 时代的能力设计理解成可组合、可迁移的一组函数，而不是孤立的单点函数。",
+      "en": "Treat capability design in the AI era as a composable, transferable family of functions rather than isolated single points."
+    },
+    "note": {
+      "zh": "把能力理解成一组可组合、可迁移的函数，会比盯着单个函数更接近 AI 时代的工作方式。",
+      "en": "Capability design works better as a composable, transferable family of functions than as isolated single functions."
+    },
+    "paragraphs": [],
+    "blocks": [],
+    "source": "substack",
+    "sourceUrl": "https://lidechi.github.io/12-Articles/posts/substack-note-function-families.html",
+    "originalSourceUrl": "https://substack.com/%40parson1/note/c-229003400",
+    "originalPublishedAt": "2026-03-17 07:35 UTC"
   },
   {
     "id": "substack-note-convergence-line",
