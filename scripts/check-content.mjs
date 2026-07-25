@@ -11,7 +11,7 @@ const errors = [];
 const articleIds = new Set();
 const articleSequences = new Set();
 const publishedArticles = [];
-const numberedNotePattern = /^(\d{3}) (.+)\.md$/u;
+const numberedNotePattern = /^(\d{3}) - (.+)\.md$/u;
 
 function parseScalar(raw) {
   const value = raw.trim();
@@ -56,7 +56,7 @@ for (const entry of readdirSync(postsRoot, { withFileTypes: true })) {
 
   const filenameMatch = entry.name.match(numberedNotePattern);
   if (!filenameMatch) {
-    errors.push(`文章文件名缺少三位序号：posts/${entry.name}`);
+    errors.push(`文章文件名必须采用“001 - 标题.md”：posts/${entry.name}`);
   } else if (articleSequences.has(filenameMatch[1])) {
     errors.push(`文章序号重复：${filenameMatch[1]}`);
   } else {

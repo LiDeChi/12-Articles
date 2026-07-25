@@ -8,7 +8,8 @@ import { fileURLToPath } from "node:url";
 
 const projectRoot = fileURLToPath(new URL("..", import.meta.url));
 const postsRoot = join(projectRoot, "posts");
-const numberedNotePattern = /^(\d{3}) (.+)\.md$/u;
+const numberedNotePattern = /^(\d{3}) - (.+)\.md$/u;
+const legacyNumberedNotePattern = /^(\d{3}) (.+)\.md$/u;
 const partialNumberPattern = /^\d+\s+/u;
 
 function parseScalar(raw) {
@@ -39,10 +40,14 @@ function metadataFor(path) {
 const notes = readdirSync(postsRoot, { withFileTypes: true })
   .filter((entry) => entry.isFile() && extname(entry.name) === ".md")
   .map((entry) => {
-    const match = entry.name.match(numberedNotePattern);
+    const currentMatch = entry.name.match(numberedNotePattern);
+    const legacyMatch = currentMatch
+      ? null
+      : entry.name.match(legacyNumberedNotePattern);
+    const match = currentMatch || legacyMatch;
     if (!match && partialNumberPattern.test(entry.name)) {
       throw new Error(
-        `笔记序号必须是三位数字加空格，或完全不写序号：posts/${entry.name}`,
+        `笔记序号必须采用“001 - 标题.md”，或完全不写序号：posts/${entry.name}`,
       );
     }
 
@@ -54,6 +59,8 @@ const notes = readdirSync(postsRoot, { withFileTypes: true })
       name: entry.name,
       path,
       sequence: match ? Number(match[1]) : null,
+      titleStem: match?.[2] || null,
+      usesLegacySeparator: Boolean(legacyMatch),
       sortTime: Number.isFinite(timestamp)
         ? timestamp
         : Number.POSITIVE_INFINITY,
@@ -83,16 +90,23 @@ if (maximumSequence + unnumberedNotes.length > 999) {
   throw new Error("文章数量超过三位序号可容纳的 999 篇。");
 }
 
-for (const note of unnumberedNotes) {
-  maximumSequence += 1;
-  const prefix = String(maximumSequence).padStart(3, "0");
-  const targetName = `${prefix} ${note.name}`;
+const legacyNotes = notes.filter((note) => note.usesLegacySeparator);
+for (const note of legacyNotes) {
+  const prefix = String(note.sequence).padStart(3, "0");
+  const targetName = `${prefix} - ${note.titleStem}.md`;
   renameSync(note.path, join(postsRoot, targetName));
 }
 
-if (unnumberedNotes.length) {
+for (const note of unnumberedNotes) {
+  maximumSequence += 1;
+  const prefix = String(maximumSequence).padStart(3, "0");
+  const targetName = `${prefix} - ${note.name}`;
+  renameSync(note.path, join(postsRoot, targetName));
+}
+
+if (legacyNotes.length || unnumberedNotes.length) {
   console.log(
-    `已为 ${unnumberedNotes.length} 篇笔记追加稳定序号；当前最大序号为 ${String(maximumSequence).padStart(3, "0")}。`,
+    `已规范 ${legacyNotes.length} 篇旧文件名，并为 ${unnumberedNotes.length} 篇新笔记追加稳定序号；当前最大序号为 ${String(maximumSequence).padStart(3, "0")}。`,
   );
 } else {
   console.log(`文章序号检查通过：${notes.length} 篇笔记均已编号。`);

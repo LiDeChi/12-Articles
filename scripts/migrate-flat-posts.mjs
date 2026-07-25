@@ -128,7 +128,7 @@ for (const entry of readdirSync(postsRoot, { withFileTypes: true })) {
   const sequencePrefix = entry.name.match(/^(\d{3})\s+/u)?.[1];
   const noteName = safeNoteName(title, articleId);
   const expectedName = sequencePrefix
-    ? `${sequencePrefix} ${noteName}`
+    ? `${sequencePrefix} - ${noteName}`
     : noteName;
   if (entry.name === expectedName) continue;
 

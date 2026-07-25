@@ -11,16 +11,16 @@
 
 ```text
 posts/
-├── 001 作品集不是截图墙：如何讲清一个项目的决策逻辑.md
-├── 002 从手工报表到自动分析：让数据真正服务策划决策.md
-└── 003 其他文章.md
+├── 001 - 作品集不是截图墙：如何讲清一个项目的决策逻辑.md
+├── 002 - 从手工报表到自动分析：让数据真正服务策划决策.md
+└── 003 - 其他文章.md
 
 assets/articles/
 ├── large-world-agent-system/
 └── reward-functions-01/
 ```
 
-文件名就是 Obsidian 中看到的笔记标题，格式统一为 `三位序号 + 空格 + 标题.md`。序号首次按文章日期从旧到新分配，之后只递增、不重排。网页标题取 front matter 中不带序号的 `title`，稳定网址由 `article-id` 和 `output-file` 决定，因此改 Obsidian 文件名不会改网址。
+文件名就是 Obsidian 中看到的笔记标题，格式统一为 `三位序号 + 空格 + 横杠 + 空格 + 标题.md`，例如 `001 - 标题.md`。序号首次按文章日期从旧到新分配，之后只递增、不重排。网页标题取 front matter 中不带序号和横杠的 `title`，稳定网址由 `article-id` 和 `output-file` 决定，因此改 Obsidian 文件名不会改网址。
 
 图片统一存放在 `assets/articles/<article-id>/`。主题使用 `categories` 元数据，不建立“数学 / Agent / 认知科学”多层目录。草稿在文章 front matter 中设置 `draft: true`；未来日期文章必须先保持草稿状态。
 
