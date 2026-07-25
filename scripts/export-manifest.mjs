@@ -41,7 +41,7 @@ function parseScalar(raw) {
 }
 
 function stripNoteSequence(value) {
-  return String(value).replace(/^\d{3}\s+/u, "");
+  return String(value).replace(/^\d{3}\s+(?:-\s+)?/u, "");
 }
 
 function parseDocument(source) {
