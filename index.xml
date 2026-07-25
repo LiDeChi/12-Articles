@@ -9,7 +9,7 @@
 <link>https://lidechi.github.io/12-Articles/</link>
 <atom:link href="https://lidechi.github.io/12-Articles/index.xml" rel="self" type="application/rss+xml"/>
 <description>数学、人工智能、Agent、强化学习与认知科学</description>
-<generator>quarto-1.9.38</generator>
+<generator>quarto-1.10.18</generator>
 <lastBuildDate>Thu, 23 Jul 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>奖励函数（一）：从期望效用到前景理论</title>
