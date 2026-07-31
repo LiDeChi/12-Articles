@@ -169,6 +169,15 @@ figure img,
   letter-spacing: 0.04em;
 }
 
+/* Use plain HTML titles inside <details> — markdown ## breaks out of details in Quarto/Pandoc. */
+.article-translation .translation-section-title {
+  margin: 1.6rem 0 0.7rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: inherit;
+}
+
 .page-footer {
   border-top: 1px solid var(--wordm-line);
 }

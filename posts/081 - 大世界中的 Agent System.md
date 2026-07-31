@@ -104,19 +104,19 @@ The system should accept vague needs, not only structured requirements. It shoul
 
 *An agent system is not a generate button. It is an environment where agent loops are born, collaborate, learn, and get reclaimed.*
 
-## Permission, APIs, and Necessary Bypass
+<p class="translation-section-title">Permission, APIs, and Necessary Bypass</p>
 
 The main agent should modify the system through exposed APIs whenever possible, rather than changing the underlying code directly. APIs form a polite boundary and a traceable, auditable entry point.
 
 Yet the system still needs a powerful API that allows bypassing the normal route when the main agent predicts the existing APIs are insufficient or more costly. Bypass should carry a resource penalty; after the change, the system should add a new API so the exception becomes institution.
 
-## History Makes the System an Environment
+<p class="translation-section-title">History Makes the System an Environment</p>
 
 The meaning of an agent system is that it has history: it knows how each agent was created, what permissions it received, what it did, when it slowed down, and when it was reclaimed.
 
 For example, agent A may read a folder and edit certain files; agent B may receive almost the same permissions but cannot edit. The system must retain these differences, because they are the memory of the environment.
 
-## Attention: Who Receives the Subagents
+<p class="translation-section-title">Attention: Who Receives the Subagents</p>
 
 Humans ask for subagents because attention cannot split indefinitely; the system has the same problem. After it creates an agent, it needs to report back, but who receives that information?
 
@@ -126,7 +126,7 @@ Attention is close to context assembly: tool lists, tool-call history, subagent 
 
 *Central attention handles understanding, planning, and coordination; local experience escalates after failure and returns as reusable skills.*
 
-## Ticks, Perception, Resources, and Idle Time
+<p class="translation-section-title">Ticks, Perception, Resources, and Idle Time</p>
 
 Ticks handle rapid change. A monitoring agent needs ticks because it perceives changes, detects anomalies, and decides whether to report. But it is worth questioning whether every monitor must be an agent: if it merely relays changes mechanically, what decision does it make?
 
@@ -136,7 +136,7 @@ Resource allocation also needs an agent. It faces numbers, but where the numbers
 
 *Low energy is not stillness, but compression. Agents without feedback slow down; agents tied to abandoned tools degrade and are reclaimed.*
 
-## Environment, Personal Agents, and Home
+<p class="translation-section-title">Environment, Personal Agents, and Home</p>
 
 LLMs may carry many priors, but to build a loop of consciousness, an environment is still missing. Is an environment not made of tools? A more realistic order is to build the base environment first, then let agents explore and expand it.
 
