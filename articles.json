@@ -123,7 +123,7 @@
         "type": "heading",
         "text": {
           "zh": "权限、API 和必要的绕过",
-          "en": "Permission, APIs, and Necessary Bypass"
+          "en": "权限、API 和必要的绕过"
         }
       },
       {
@@ -144,7 +144,7 @@
         "type": "heading",
         "text": {
           "zh": "历史让系统像环境，而不是工具调用器",
-          "en": "History Makes the System an Environment"
+          "en": "历史让系统像环境，而不是工具调用器"
         }
       },
       {
@@ -165,7 +165,7 @@
         "type": "heading",
         "text": {
           "zh": "注意力：谁来接收子代理的信息",
-          "en": "Attention: Who Receives the Subagents"
+          "en": "注意力：谁来接收子代理的信息"
         }
       },
       {
@@ -200,7 +200,7 @@
         "type": "heading",
         "text": {
           "zh": "Tick、感知、资源与闲暇",
-          "en": "Ticks, Perception, Resources, and Idle Time"
+          "en": "Tick、感知、资源与闲暇"
         }
       },
       {
@@ -235,7 +235,7 @@
         "type": "heading",
         "text": {
           "zh": "环境、个人 agent 与“家”",
-          "en": "Environment, Personal Agents, and Home"
+          "en": "环境、个人 agent 与“家”"
         }
       },
       {

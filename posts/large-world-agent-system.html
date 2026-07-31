@@ -48,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ef2ff3657f70fd49fbaac60925d300df.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-f040dc070aee9eadfef452afd7800c07.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -151,11 +151,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#注意力谁来接收子代理的信息" id="toc-注意力谁来接收子代理的信息" class="nav-link" data-scroll-target="#注意力谁来接收子代理的信息"><span class="header-section-number">3</span> 注意力：谁来接收子代理的信息</a></li>
   <li><a href="#tick感知资源与闲暇" id="toc-tick感知资源与闲暇" class="nav-link" data-scroll-target="#tick感知资源与闲暇"><span class="header-section-number">4</span> Tick、感知、资源与闲暇</a></li>
   <li><a href="#环境个人-agent-与家" id="toc-环境个人-agent-与家" class="nav-link" data-scroll-target="#环境个人-agent-与家"><span class="header-section-number">5</span> 环境、个人 agent 与“家”</a></li>
-  <li><a href="#permission-apis-and-necessary-bypass" id="toc-permission-apis-and-necessary-bypass" class="nav-link" data-scroll-target="#permission-apis-and-necessary-bypass"><span class="header-section-number">6</span> Permission, APIs, and Necessary Bypass</a></li>
-  <li><a href="#history-makes-the-system-an-environment" id="toc-history-makes-the-system-an-environment" class="nav-link" data-scroll-target="#history-makes-the-system-an-environment"><span class="header-section-number">7</span> History Makes the System an Environment</a></li>
-  <li><a href="#attention-who-receives-the-subagents" id="toc-attention-who-receives-the-subagents" class="nav-link" data-scroll-target="#attention-who-receives-the-subagents"><span class="header-section-number">8</span> Attention: Who Receives the Subagents</a></li>
-  <li><a href="#ticks-perception-resources-and-idle-time" id="toc-ticks-perception-resources-and-idle-time" class="nav-link" data-scroll-target="#ticks-perception-resources-and-idle-time"><span class="header-section-number">9</span> Ticks, Perception, Resources, and Idle Time</a></li>
-  <li><a href="#environment-personal-agents-and-home" id="toc-environment-personal-agents-and-home" class="nav-link" data-scroll-target="#environment-personal-agents-and-home"><span class="header-section-number">10</span> Environment, Personal Agents, and Home</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/LiDeChi/blog/blob/main/posts/081 - 大世界中的 Agent System.md" class="toc-action"><i class="bi bi-github"></i>查看代码</a></li></ul></div></nav>
     </div>
@@ -306,19 +301,19 @@ English translation
 </figure>
 </div>
 <p><em>An agent system is not a generate button. It is an environment where agent loops are born, collaborate, learn, and get reclaimed.</em></p>
-</details></section>
-<section id="permission-apis-and-necessary-bypass" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="permission-apis-and-necessary-bypass"><span class="header-section-number">6</span> Permission, APIs, and Necessary Bypass</h2>
+<p class="translation-section-title">
+Permission, APIs, and Necessary Bypass
+</p>
 <p>The main agent should modify the system through exposed APIs whenever possible, rather than changing the underlying code directly. APIs form a polite boundary and a traceable, auditable entry point.</p>
 <p>Yet the system still needs a powerful API that allows bypassing the normal route when the main agent predicts the existing APIs are insufficient or more costly. Bypass should carry a resource penalty; after the change, the system should add a new API so the exception becomes institution.</p>
-</section>
-<section id="history-makes-the-system-an-environment" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="history-makes-the-system-an-environment"><span class="header-section-number">7</span> History Makes the System an Environment</h2>
+<p class="translation-section-title">
+History Makes the System an Environment
+</p>
 <p>The meaning of an agent system is that it has history: it knows how each agent was created, what permissions it received, what it did, when it slowed down, and when it was reclaimed.</p>
 <p>For example, agent A may read a folder and edit certain files; agent B may receive almost the same permissions but cannot edit. The system must retain these differences, because they are the memory of the environment.</p>
-</section>
-<section id="attention-who-receives-the-subagents" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="attention-who-receives-the-subagents"><span class="header-section-number">8</span> Attention: Who Receives the Subagents</h2>
+<p class="translation-section-title">
+Attention: Who Receives the Subagents
+</p>
 <p>Humans ask for subagents because attention cannot split indefinitely; the system has the same problem. After it creates an agent, it needs to report back, but who receives that information?</p>
 <p>Attention is close to context assembly: tool lists, tool-call history, subagent feedback, and the current decision. Judgment can be centralized, or distributed to local agents; repeated local failure can be escalated to the center, then pushed back down as a skill after resolution.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -328,9 +323,9 @@ English translation
 </figure>
 </div>
 <p><em>Central attention handles understanding, planning, and coordination; local experience escalates after failure and returns as reusable skills.</em></p>
-</section>
-<section id="ticks-perception-resources-and-idle-time" class="level2" data-number="9">
-<h2 data-number="9" class="anchored" data-anchor-id="ticks-perception-resources-and-idle-time"><span class="header-section-number">9</span> Ticks, Perception, Resources, and Idle Time</h2>
+<p class="translation-section-title">
+Ticks, Perception, Resources, and Idle Time
+</p>
 <p>Ticks handle rapid change. A monitoring agent needs ticks because it perceives changes, detects anomalies, and decides whether to report. But it is worth questioning whether every monitor must be an agent: if it merely relays changes mechanically, what decision does it make?</p>
 <p>Resource allocation also needs an agent. It faces numbers, but where the numbers come from and how the math is constructed remain open. When spare resources are unallocated, perhaps that is idle time: attention narrows to a few tools, combines them, discovers patterns, and abstracts new tools.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -340,15 +335,15 @@ English translation
 </figure>
 </div>
 <p><em>Low energy is not stillness, but compression. Agents without feedback slow down; agents tied to abandoned tools degrade and are reclaimed.</em></p>
-</section>
-<section id="environment-personal-agents-and-home" class="level2" data-number="10">
-<h2 data-number="10" class="anchored" data-anchor-id="environment-personal-agents-and-home"><span class="header-section-number">10</span> Environment, Personal Agents, and Home</h2>
+<p class="translation-section-title">
+Environment, Personal Agents, and Home
+</p>
 <p>LLMs may carry many priors, but to build a loop of consciousness, an environment is still missing. Is an environment not made of tools? A more realistic order is to build the base environment first, then let agents explore and expand it.</p>
 <p>A platform is not a single tool, but an environment with distribution. Users may pay to download, or their personal agents may decide to download. Agents in the environment behave more in line with user preferences, and the personal agent gains experience in return.</p>
 <p>Everyone wants a world of their own. This world is not just a 3D walking space; it can orchestrate many modalities and contain other environments. It is an entrance, a place of review, and a place to collect information. Is that not home?</p>
 <p>The role of an app becomes clear: an app extracts a core experience from this world. It is an abstraction and compression of a complex environment.</p>
 <!-- wordm:lang end -->
-
+</details>
 
 
 </section>
