@@ -1,0 +1,9 @@
+/* Site wallpaper — paths are relative to this file in assets/ */
+body {
+  background-color: #fffcf7;
+  background-image: url("bg-math-physics.svg");
+  background-size: 960px 720px;
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-attachment: fixed;
+}

@@ -1,7 +1,7 @@
 project:
   type: website
   render:
-    - "*.qmd"
+    - index.qmd
     - "posts/*.md"
   pre-render:
     - "node scripts/check-content.mjs"
@@ -12,8 +12,7 @@ website:
   title: "李德驰的研究笔记"
   description: "数学、人工智能、Agent、强化学习与认知科学"
   site-url: "https://lidechi.github.io/blog"
-  repo-url: "https://github.com/LiDeChi/blog"
-  repo-actions: [source]
+  # 不公开源码仓库：不设 repo-url / repo-actions，避免「查看代码」与 GitHub 入口
   favicon: "assets/favicon.svg"
   search: true
   draft-mode: gone
@@ -23,12 +22,25 @@ website:
     left:
       - href: index.qmd
         text: "文章"
-      - href: about.qmd
-        text: "关于"
     right:
       - icon: house
-        text: "主页"
-        href: "https://wordm.us/blog/"
+        aria-label: "主页 wordm.us"
+        href: "https://wordm.us/"
+      - icon: twitter-x
+        aria-label: "X"
+        href: "https://x.com/parsonjian"
+      - icon: newspaper
+        aria-label: "Substack"
+        href: "https://substack.com/@parson1"
+      - icon: telegram
+        aria-label: "Telegram"
+        href: "https://t.me/fount_ai"
+      - icon: discord
+        aria-label: "Discord"
+        href: "https://discord.gg/2p7fJpXequ"
+      - icon: reddit
+        aria-label: "Reddit"
+        href: "https://www.reddit.com/r/Fount/"
       - icon: rss
         aria-label: "RSS"
         href: index.xml
@@ -42,6 +54,8 @@ format:
     theme:
       - cosmo
       - styles.scss
+    css:
+      - assets/site-bg.css
     toc: true
     number-sections: true
     code-fold: true

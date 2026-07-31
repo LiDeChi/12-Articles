@@ -1,18 +1,18 @@
 ---
 title: "文章"
 listing:
-  contents: "posts/*.md"
+  contents: "posts/[0-9][0-9][0-9]*.md"
   sort: "date desc"
   type: default
   categories: true
   feed:
     type: partial
-  filter-ui: true
+  filter-ui: false
   sort-ui: false
-  page-size: 20
+  page-size: 100
+  fields: [image, date, title, author, reading-time, description, categories]
 page-layout: full
+include-after-body:
+  - text: |
+      <script src="assets/blog-surface.js"></script>
 ---
-
-这里记录我关于数学、人工智能、Agent、强化学习和认知科学的研究与思考。
-
-`posts/` 中每个 Markdown 文件就是一篇 Obsidian 笔记。长文、研究札记与草稿保持扁平存放，主题关系由分类连接；未来日期内容默认作为草稿，不提前出现在网站上。

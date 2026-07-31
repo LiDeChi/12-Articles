@@ -1,29 +1,40 @@
 /*-- scss:defaults --*/
 
-$body-bg: #f7f3ea;
-$body-color: #211f1a;
-$link-color: #284d3d;
-$link-hover-color: #173326;
-$primary: #284d3d;
-$navbar-bg: rgba(247, 243, 234, 0.94);
-$navbar-fg: #211f1a;
-$navbar-hl: #284d3d;
-$border-color: rgba(42, 49, 42, 0.16);
-$font-family-sans-serif: "Avenir Next", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-$headings-font-family: "Iowan Old Style", "Songti SC", "STSong", "Noto Serif CJK SC", serif;
+$body-bg: #fffcf7;
+$body-color: #1a1714;
+$link-color: #2a3d32;
+$link-hover-color: #13241c;
+$primary: #2a3d32;
+$navbar-bg: rgba(255, 252, 247, 0.92);
+$navbar-fg: #1a1714;
+$navbar-hl: #2a3d32;
+$border-color: rgba(26, 23, 20, 0.1);
+$font-family-sans-serif: "JetBrains Mono", "SFMono-Regular", "Menlo", "Consolas", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", monospace;
+$headings-font-family: "JetBrains Mono", "SFMono-Regular", "Menlo", "Consolas", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", monospace;
 $headings-font-weight: 600;
 $code-bg: rgba(255, 255, 255, 0.64);
 $code-color: #1e3d31;
-$border-radius: 0.45rem;
+$border-radius: 0.35rem;
+$font-size-root: 14px;
 
 /*-- scss:rules --*/
 
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap");
+
 :root {
-  --wordm-grid: rgba(37, 66, 53, 0.055);
-  --wordm-ink-muted: #6f6b61;
-  --wordm-surface: rgba(255, 255, 255, 0.62);
-  --wordm-line: rgba(42, 49, 42, 0.16);
-  --wordm-accent: #284d3d;
+  --blog-grid: 24px;
+  // Stream content column (includes left month rail)
+  --blog-col: min(36rem, calc(100vw - 2rem));
+  // Preview browse: stream + tight archive rail
+  --blog-browse-col: min(calc(36rem + 0.55rem + 6.4rem), calc(100vw - 2rem));
+  // Reading mode column (article + toc)
+  --blog-read-col: min(52rem, calc(100vw - 2rem));
+  --wordm-grid: rgba(26, 23, 20, 0.05);
+  --wordm-ink-muted: #6a6259;
+  --wordm-surface: rgba(255, 252, 247, 0.92);
+  --wordm-line: rgba(26, 23, 20, 0.1);
+  --wordm-accent: #2a3d32;
+  --blog-ink: #1a1714;
 }
 
 html {
@@ -31,41 +42,238 @@ html {
 }
 
 body {
+  // Wallpaper set in assets/site-bg.css (correct asset path for Quarto)
   background-color: $body-bg;
-  background-image:
-    linear-gradient(var(--wordm-grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--wordm-grid) 1px, transparent 1px);
-  background-size: 44px 44px;
   text-rendering: optimizeLegibility;
+  font-family: $font-family-sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+// Preview active row — soft highlight only (immersive has no paper fill)
+.blog-preview-item.is-active {
+  background: rgba(26, 23, 20, 0.02);
+}
+
+// Shared content column — brand left edge == stream/paper left edge
+.navbar {
+  --bs-gutter-x: 0;
+  padding-inline: 0 !important;
+}
+
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar .container-xl,
+.navbar .container-lg,
+.navbar .container-md,
+.navbar .container-sm {
+  width: var(--blog-col) !important;
+  max-width: var(--blog-col) !important;
+  margin-inline: auto !important;
+  padding-inline: 0 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+// Keep brand + links on one row; avoid hamburger shifting brand off the column edge
+.navbar .navbar-brand {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.navbar .navbar-collapse {
+  flex-grow: 1;
+  display: flex !important;
+  flex-basis: auto !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Prefer expanded nav on desktop so icons stay aligned in the same column
+@media (min-width: 768px) {
+  .navbar .navbar-toggler {
+    display: none !important;
+  }
+
+  .navbar .navbar-collapse {
+    display: flex !important;
+    visibility: visible !important;
+  }
+}
+
+.page-layout-full .quarto-title-block,
+.page-layout-full main,
+#quarto-content > *,
+.blog-surface-shell {
+  width: var(--blog-col) !important;
+  max-width: var(--blog-col) !important;
+  margin-inline: auto !important;
+}
+
+// Preview browse: stream + month archive, tightly packed.
+// Also override #quarto-content > * (ID selector) which would force --blog-col.
+body.blog-is-preview .navbar > .container,
+body.blog-is-preview .navbar > .container-fluid,
+body.blog-is-preview .navbar .container-xl,
+body.blog-is-preview .navbar .container-lg,
+body.blog-is-preview .navbar .container-md,
+body.blog-is-preview .navbar .container-sm,
+body.blog-is-preview #quarto-content > main,
+body.blog-is-preview main.content,
+body.blog-is-preview #quarto-content > .blog-surface-shell,
+body.blog-is-preview #quarto-content > *,
+body.blog-is-preview .blog-surface-shell {
+  width: var(--blog-browse-col) !important;
+  max-width: var(--blog-browse-col) !important;
+}
+
+// Immersive: align navbar with reading column
+body.blog-is-immersive .navbar > .container,
+body.blog-is-immersive .navbar > .container-fluid,
+body.blog-is-immersive .navbar .container-xl,
+body.blog-is-immersive .navbar .container-lg,
+body.blog-is-immersive .navbar .container-md,
+body.blog-is-immersive .navbar .container-sm {
+  width: var(--blog-read-col) !important;
+  max-width: var(--blog-read-col) !important;
+}
+
+.quarto-listing.blog-surface-source,
+.blog-title-hidden {
+  display: none !important;
 }
 
 .navbar {
   border-bottom: 1px solid var(--wordm-line);
   box-shadow: none;
-  backdrop-filter: blur(18px);
+  backdrop-filter: blur(14px);
+  min-height: 0;
+  padding-block: 0.3rem;
 }
 
 .navbar-brand {
   font-family: $headings-font-family;
-  font-size: 1.02rem;
+  font-size: 0.84rem;
+  font-weight: 600;
   letter-spacing: 0.01em;
+  margin-right: 0.75rem !important;
+  padding-inline: 0 !important;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  height: 1.75rem;
+}
+
+// One row, optically even platform icons
+.navbar .navbar-nav {
+  align-items: center !important;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-nav .nav-link {
-  font-size: 0.9rem;
-  letter-spacing: 0.03em;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  padding: 0 0.28rem !important;
+  margin: 0 !important;
+  font-size: 0.74rem;
+  letter-spacing: 0;
+  line-height: 1;
+  border: 0 !important;
+}
+
+// Icon-only: uniform glyph size & box
+.navbar-nav .nav-link i.bi,
+.navbar-nav .nav-link .bi {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.95rem !important;
+  line-height: 1;
+  margin: 0 !important;
+  vertical-align: middle;
+}
+
+// Text-only fallback links (if any) — same height box
+.navbar-nav .nav-link:not(:has(i)):not(:has(.bi)) {
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+  padding-inline: 0.35rem !important;
+}
+
+// Search toggle matches icon row
+.navbar .quarto-navbar-tools,
+.navbar .quarto-navbar-tools .quarto-search-button,
+.navbar .navbar-toggler {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.75rem;
+  min-width: 1.75rem;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.navbar .quarto-navbar-tools .bi {
+  font-size: 0.95rem;
+  line-height: 1;
 }
 
 #quarto-content {
-  min-height: calc(100vh - 4rem);
+  min-height: calc(100vh - 3rem);
 }
 
-.quarto-title h1,
-.title {
-  max-width: 18ch;
-  font-size: clamp(2.35rem, 6vw, 5.35rem);
-  line-height: 0.98;
-  letter-spacing: -0.045em;
+body.nav-fixed #quarto-content,
+#quarto-content.page-columns {
+  display: block !important;
+  grid-template-columns: none !important;
+}
+
+#quarto-margin-sidebar,
+#quarto-sidebar,
+nav.sidebar,
+.sidebar.margin-sidebar {
+  display: none !important;
+}
+
+#quarto-document-content,
+main.content {
+  grid-column: unset !important;
+  max-width: none !important;
+}
+
+// Hide empty index title block; nav already has 文章
+body.nav-fixed #title-block-header,
+#title-block-header {
+  display: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.quarto-title h1.title,
+#title-block-header .title {
+  max-width: none;
+  margin: 0;
+  font-size: 0.95rem !important;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0;
+  border: 0;
+  padding: 0;
 }
 
 .quarto-title-meta,
@@ -74,53 +282,530 @@ body {
 .listing-date,
 .quarto-category {
   color: var(--wordm-ink-muted);
+  font-size: 0.74rem;
 }
 
-.page-layout-full .quarto-title-block,
-.page-layout-full main {
-  width: min(1120px, calc(100% - 2rem));
-  margin-inline: auto;
+// ---------- Stream shell (not cards) ----------
+.blog-surface-shell {
+  margin: 0.15rem auto 5.5rem;
+  display: grid;
+  gap: 0;
+  color: var(--blog-ink);
 }
 
-.quarto-listing {
-  margin-top: 3.5rem;
+// Reading mode: same width token as navbar (--blog-read-col)
+body.blog-is-immersive #quarto-content > main,
+body.blog-is-immersive main.content,
+body.blog-is-immersive #quarto-content > .blog-surface-shell,
+body.blog-is-immersive .blog-surface-shell {
+  width: var(--blog-read-col) !important;
+  max-width: var(--blog-read-col) !important;
+  margin-inline: auto !important;
 }
 
-.quarto-listing-default .quarto-post {
-  padding: 1.65rem 0;
+// Soften chrome without making the bar look broken
+body.blog-is-immersive .navbar {
+  opacity: 0.78;
+  filter: none;
+}
+
+body.blog-is-immersive .page-footer {
+  opacity: 0.6;
+  filter: none;
+}
+
+body.blog-is-immersive .navbar:hover,
+body.blog-is-immersive .page-footer:hover {
+  opacity: 1;
+}
+
+// Browse shell: [month scale | articles] [archive] — packed tight
+.blog-browse {
+  width: 100%;
+}
+
+.blog-browse-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.65rem;
+  width: 100%;
+}
+
+.blog-preview-stack {
+  display: grid;
+  gap: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+// Flat list rows, divider only
+.blog-preview-item {
+  border: 0;
   border-bottom: 1px solid var(--wordm-line);
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  scroll-margin-top: 64px;
 }
 
-.quarto-listing-default .quarto-post:first-child {
-  border-top: 1px solid var(--wordm-line);
+.blog-month-posts .blog-preview-item:last-child {
+  border-bottom-color: rgba(26, 23, 20, 0.06);
 }
 
-.listing-title {
-  font-family: $headings-font-family;
-  font-size: clamp(1.3rem, 2.4vw, 2rem);
-  line-height: 1.2;
+.blog-preview-item.is-active {
+  background: rgba(26, 23, 20, 0.02);
 }
 
-.listing-title a {
-  color: $body-color;
+// Title → meta tightly glued; meta clearly under THIS title
+.blog-preview-hit {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  width: 100%;
+  padding: 0.85rem 0 0.7rem;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.blog-preview-title {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--blog-ink);
+  border: 0;
+}
+
+.blog-preview-meta {
+  display: block;
+  margin: 0.1rem 0 0;
+  padding: 0;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  color: var(--wordm-ink-muted);
+  letter-spacing: 0.01em;
+}
+
+.blog-preview-media {
+  margin: 0.45rem 0 0.2rem;
+  border: 1px solid var(--wordm-line);
+  border-radius: 4px;
+  overflow: hidden;
+  max-height: 148px;
+  background: rgba(26, 23, 20, 0.025);
+}
+
+.blog-preview-media img {
+  display: block;
+  width: 100%;
+  max-height: 148px;
+  object-fit: cover;
+}
+
+// No vertical half-cut: full 200 chars, tail chars fade horizontally
+.blog-preview-text {
+  margin: 0.35rem 0 0;
+  font-size: 0.86rem;
+  font-weight: 400;
+  line-height: 1.58;
+  color: rgba(26, 23, 20, 0.78);
+  max-height: none;
+  overflow: visible;
+}
+
+.blog-tail-fade {
+  display: inline;
+  color: rgba(26, 23, 20, 0.78);
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.92) 0%,
+    rgba(0, 0, 0, 0.45) 55%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.92) 0%,
+    rgba(0, 0, 0, 0.45) 55%,
+    transparent 100%
+  );
+}
+
+.blog-expand-glyph {
+  display: inline;
+  margin-left: 0.12em;
+  font-size: 0.95em;
+  color: rgba(26, 23, 20, 0.22);
+  transition: color 0.15s ease;
+}
+
+.blog-preview-item:hover .blog-expand-glyph,
+.blog-preview-item:focus-within .blog-expand-glyph {
+  color: rgba(26, 23, 20, 0.72);
+}
+
+// Month scale: left rail shows full 年+月
+.blog-month-group {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr);
+  column-gap: 0.45rem;
+  align-items: start;
+  scroll-margin-top: 4rem;
+}
+
+.blog-month-label {
+  position: sticky;
+  top: 3.5rem;
+  display: grid;
+  gap: 0.06rem;
+  justify-items: start;
+  align-content: start;
+  padding: 0.7rem 0 0.35rem;
+  font-size: 0.62rem;
+  line-height: 1.25;
+  letter-spacing: 0;
+  color: rgba(26, 23, 20, 0.48);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.blog-month-year {
+  display: block;
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+  color: rgba(26, 23, 20, 0.48);
+}
+
+.blog-month-num {
+  display: block;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  font-size: 0.68rem;
+  color: rgba(26, 23, 20, 0.68);
+}
+
+.blog-month-posts {
+  min-width: 0;
+}
+
+// Right archive rail — months that have posts (tight against stream)
+// NOTE: do NOT use <aside> — Quarto maps aside to grid-column: body-end / page-end
+// which opens a huge gap. Also reset any page-grid column placement.
+.blog-archive {
+  position: sticky;
+  top: 3.5rem;
+  flex: 0 0 6.4rem;
+  width: 6.4rem;
+  max-width: 6.4rem;
+  display: grid;
+  gap: 0.16rem;
+  align-content: start;
+  align-self: start;
+  max-height: calc(100dvh - 5rem);
+  overflow: auto;
+  margin: 0;
+  padding: 0.4rem 0 0.4rem 0.55rem;
+  border-left: 1px solid var(--wordm-line);
+  font-size: 0.64rem;
+  line-height: 1.3;
+  // Defeat Quarto page-layout named grid lines if any ancestor is a page grid
+  grid-column: auto !important;
+  grid-row: auto !important;
+  float: none !important;
+}
+
+.blog-archive-item {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0.22rem 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--wordm-ink-muted);
+  font: inherit;
+  font-size: 0.62rem;
+  letter-spacing: 0;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.12s ease;
+}
+
+.blog-archive-item:hover,
+.blog-archive-item.is-active {
+  color: var(--blog-ink);
+}
+
+.blog-archive-count {
+  color: rgba(26, 23, 20, 0.38);
+  font-variant-numeric: tabular-nums;
+}
+
+.blog-archive-item.is-active .blog-archive-count {
+  color: rgba(26, 23, 20, 0.55);
+}
+
+// Immersive reading surface
+.blog-immersive {
+  width: 100%;
+  padding-top: 0.25rem;
+  padding-bottom: 1rem;
+}
+
+// Flex: paper grows, TOC fixed width, no phantom grid tracks
+.blog-immersive-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.9rem;
+  width: 100%;
+}
+
+// Reading column — no outer frame (flush with page surface)
+.blog-immersive-article {
+  flex: 1 1 auto;
+  min-width: 0;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0.35rem 0 1.75rem;
+  scroll-margin-top: 56px;
+}
+
+// Title → meta (same as stream)
+.blog-immersive-title {
+  margin: 0;
+  font-size: 1.05rem !important;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0;
+  border: 0;
+  max-width: none;
+}
+
+.blog-immersive-meta {
+  margin: 0.15rem 0 0.95rem;
+  font-size: 0.64rem;
+  line-height: 1.25;
+  color: var(--wordm-ink-muted);
+}
+
+// Right TOC — sticky, fixed width beside paper
+.blog-toc {
+  position: sticky;
+  top: 3.4rem;
+  flex: 0 0 10.5rem;
+  width: 10.5rem;
+  max-width: 10.5rem;
+  align-self: start;
+  max-height: calc(100dvh - 5rem);
+  overflow: auto;
+  padding: 0.35rem 0 0.35rem 0.7rem;
+  border-left: 1px solid var(--wordm-line);
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: var(--wordm-ink-muted);
+}
+
+.blog-toc-label {
+  margin: 0 0 0.4rem;
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(26, 23, 20, 0.4);
+}
+
+.blog-toc-nav {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.blog-toc-link {
+  display: block;
+  color: var(--wordm-ink-muted);
   text-decoration: none;
+  border: 0;
+  border-bottom: none !important;
+  background: transparent;
+  padding: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 0.12s ease;
 }
 
-.listing-title a:hover {
-  color: var(--wordm-accent);
+.blog-toc-link:hover,
+.blog-toc-link.is-active {
+  color: var(--blog-ink);
+  background: transparent;
 }
 
-.quarto-category {
-  border-color: var(--wordm-line) !important;
-  border-radius: 999px !important;
-  background: rgba(255, 255, 255, 0.36);
-  font-size: 0.73rem !important;
+.blog-toc-h3 {
+  padding-left: 0.5rem;
+  font-size: 0.64rem;
+}
+
+.blog-toc-h4 {
+  padding-left: 0.9rem;
+  font-size: 0.62rem;
+}
+
+.blog-toc-empty {
+  opacity: 0.45;
+}
+
+.blog-immersive-body {
+  font-size: 0.92rem;
+  line-height: 1.72;
+  color: rgba(26, 23, 20, 0.9);
+}
+
+.blog-immersive-body p,
+.blog-immersive-body li {
+  max-width: none;
+  margin-bottom: 0.85rem;
+  text-align: left;
+}
+
+.blog-immersive-body h2,
+.blog-immersive-body h3,
+.blog-immersive-body h4 {
+  margin-top: 1.25em;
+  margin-bottom: 0.45em;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.blog-immersive-body img,
+.blog-immersive-body figure {
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-immersive-body img {
+  border: 1px solid var(--wordm-line);
+  border-radius: 0.35rem;
+  background: #fff;
+}
+
+// Math / code blocks shouldn't overflow the paper
+.blog-immersive-body .math,
+.blog-immersive-body .katex-display,
+.blog-immersive-body pre,
+.blog-immersive-body table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.blog-immersive-loading,
+.blog-immersive-error {
+  color: var(--wordm-ink-muted);
+  font-size: 0.84rem;
+}
+
+// Dock: 返回目录 | 上一篇 | 下一篇
+.blog-reading-dock {
+  position: fixed;
+  left: 50%;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  z-index: 40;
+  display: flex;
+  gap: 4px;
+  width: min(36rem, calc(100vw - 20px));
+  padding: 4px;
+  border: 1px solid rgba(26, 23, 20, 0.08);
+  border-radius: 14px;
+  background: rgba(255, 252, 247, 0.62);
+  box-shadow:
+    0 4px 16px rgba(26, 23, 20, 0.06),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px) saturate(110%);
+  transform: translateX(-50%);
+}
+
+.blog-dock-secondary,
+.blog-dock-nav {
+  border: 0;
+  border-radius: 11px;
+  background: transparent;
+  color: rgba(26, 23, 20, 0.52);
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.blog-dock-secondary:hover,
+.blog-dock-nav:hover:not(:disabled) {
+  background: rgba(26, 23, 20, 0.05);
+  color: rgba(26, 23, 20, 0.88);
+}
+
+.blog-dock-secondary {
+  flex: 0 0 auto;
+  padding: 7px 10px;
+  font-size: 0.66rem;
   letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 
+.blog-dock-nav {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 9px;
+  text-align: left;
+}
+
+.blog-dock-nav:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.blog-dock-label {
+  flex: 0 0 auto;
+  font-size: 0.54rem;
+  letter-spacing: 0.06em;
+  color: rgba(26, 23, 20, 0.4);
+  white-space: nowrap;
+}
+
+.blog-dock-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.72rem;
+}
+
+// Math in immersive paper (match Quarto density)
+.blog-immersive-body .math.display,
+.blog-immersive-body .math.inline {
+  font-size: 1em;
+}
+
+.blog-immersive-body mjx-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+// Article pages
 main.content {
-  font-size: 1.05rem;
-  line-height: 1.88;
+  font-size: 0.9rem;
+  line-height: 1.68;
 }
 
 main.content > p,
@@ -130,9 +815,20 @@ main.content > blockquote {
   max-width: 70ch;
 }
 
+main.content h1,
+main.content .title {
+  font-size: 1.02rem !important;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0;
+  max-width: none;
+}
+
 main.content h2,
 main.content h3 {
-  margin-top: 2.7em;
+  margin-top: 1.5em;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 blockquote {
@@ -149,14 +845,14 @@ blockquote {
 figure img,
 .quarto-figure img {
   border: 1px solid var(--wordm-line);
-  border-radius: 0.55rem;
+  border-radius: 0.35rem;
   background: #fff;
 }
 
 .article-translation {
   max-width: 70ch;
-  margin-top: 4rem;
-  padding: 1rem 1.2rem;
+  margin-top: 2.2rem;
+  padding: 0.75rem 0;
   border-top: 1px solid var(--wordm-line);
   border-bottom: 1px solid var(--wordm-line);
 }
@@ -164,42 +860,108 @@ figure img,
 .article-translation summary {
   cursor: pointer;
   color: var(--wordm-accent);
-  font-size: 0.86rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
-}
-
-/* Use plain HTML titles inside <details> — markdown ## breaks out of details in Quarto/Pandoc. */
-.article-translation .translation-section-title {
-  margin: 1.6rem 0 0.7rem;
-  font-size: 1.05rem;
-  font-weight: 700;
-  line-height: 1.35;
-  color: inherit;
 }
 
 .page-footer {
   border-top: 1px solid var(--wordm-line);
+  font-size: 0.72rem;
+  padding-block: 0.65rem;
+}
+
+// Hide Quarto "view source" / repo chrome if any remains
+.toc-actions,
+.nav-footer .toc-actions,
+a[href*="github.com/LiDeChi/blog"] {
+  display: none !important;
+}
+
+.page-footer .nav-footer {
+  width: var(--blog-col);
+  max-width: var(--blog-col);
+  margin-inline: auto;
+  padding-inline: 0;
+}
+
+body.blog-is-preview .page-footer .nav-footer {
+  width: var(--blog-browse-col);
+  max-width: var(--blog-browse-col);
+}
+
+body.blog-is-immersive .page-footer .nav-footer {
+  width: var(--blog-read-col);
+  max-width: var(--blog-read-col);
 }
 
 @media (max-width: 767px) {
-  body {
-    background-size: 32px 32px;
+  :root {
+    --blog-grid: 20px;
+    --blog-col: min(100% - 1.25rem, 36rem);
+    --blog-browse-col: min(100% - 1.25rem, 36rem);
   }
 
-  .quarto-title h1,
-  .title {
+  .blog-browse-layout {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .blog-archive {
+    position: static;
+    order: -1;
+    flex: none;
+    width: auto;
     max-width: none;
-    font-size: clamp(2.15rem, 12vw, 3.6rem);
+    max-height: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem 0.5rem;
+    padding: 0.3rem 0 0.45rem;
+    border-left: 0;
+    border-bottom: 1px solid var(--wordm-line);
   }
 
-  .page-layout-full .quarto-title-block,
-  .page-layout-full main {
-    width: min(100% - 1.25rem, 1120px);
+  .blog-archive-item {
+    width: auto;
+    white-space: nowrap;
+    padding: 0.12rem 0;
   }
 
-  main.content {
-    font-size: 1rem;
-    line-height: 1.78;
+  .blog-month-group {
+    grid-template-columns: 3.2rem minmax(0, 1fr);
+    column-gap: 0.35rem;
+  }
+
+  .blog-immersive-layout {
+    flex-direction: column;
+  }
+
+  .blog-immersive-article {
+    width: 100%;
+    padding: 0.35rem 0 1.25rem;
+  }
+
+  .blog-toc {
+    position: static;
+    flex: none;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    border-left: 0;
+    border-top: 1px solid var(--wordm-line);
+    padding: 0.65rem 0 0;
+    margin-top: 0.15rem;
+  }
+
+  .blog-reading-dock {
+    width: calc(100vw - 16px);
+  }
+
+  body.blog-is-immersive #quarto-content > main,
+  body.blog-is-immersive main.content,
+  body.blog-is-immersive #quarto-content > .blog-surface-shell,
+  body.blog-is-immersive .blog-surface-shell {
+    width: min(100vw - 1.25rem, 40rem) !important;
+    max-width: min(100vw - 1.25rem, 40rem) !important;
   }
 }
