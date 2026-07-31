@@ -10,4 +10,4 @@ title: "关于"
 
 - [返回主页博客](https://wordm.us/blog/)
 - [订阅 RSS](index.xml)
-- [查看 GitHub 源文件](https://github.com/LiDeChi/12-Articles)
+- [查看 GitHub 源文件](https://github.com/LiDeChi/blog)

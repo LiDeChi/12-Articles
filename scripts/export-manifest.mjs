@@ -16,7 +16,7 @@ import {
 
 const projectRoot = resolve(import.meta.dirname, "..");
 const postsRoot = join(projectRoot, "posts");
-const siteUrl = "https://lidechi.github.io/12-Articles";
+const siteUrl = "https://lidechi.github.io/blog";
 const outputDir = resolve(
   projectRoot,
   process.env.QUARTO_PROJECT_OUTPUT_DIR || "_site",

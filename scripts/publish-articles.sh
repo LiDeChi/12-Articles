@@ -86,5 +86,5 @@ git commit -m "content: publish ${PUBLISH_LABEL}"
 git push origin main
 
 printf '\n文章已推送。GitHub Pages 通常会在 1–2 分钟内更新：\n'
-printf '  文章站：https://lidechi.github.io/12-Articles/\n'
+printf '  文章站：https://lidechi.github.io/blog/\n'
 printf '  主页博客：https://wordm.us/blog/\n'

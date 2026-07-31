@@ -1,1 +1,1 @@
-Sitemap: https://lidechi.github.io/12-Articles/sitemap.xml
+Sitemap: https://lidechi.github.io/blog/sitemap.xml
