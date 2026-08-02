@@ -3,6 +3,9 @@ project:
   render:
     - index.qmd
     - "posts/*.md"
+  resources:
+    - 404.html
+    - assets/legacy-blog-redirect.js
   pre-render:
     - "node scripts/check-content.mjs"
   post-render:
