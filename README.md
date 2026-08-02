@@ -2,7 +2,7 @@
 
 `12-Articles` 是公开文章的唯一源目录，同时驱动两个阅读入口：
 
-- Quarto / GitHub Pages：<https://lidechi.github.io/blog/>
+- Quarto / GitHub Pages：<https://lidechi.github.io/>
 - 主页博客：<https://wordm.us/blog/>
 
 ## 笔记约定

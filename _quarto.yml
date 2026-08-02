@@ -11,7 +11,7 @@ project:
 website:
   title: "李德驰的研究笔记"
   description: "数学、人工智能、Agent、强化学习与认知科学"
-  site-url: "https://lidechi.github.io/blog"
+  site-url: "https://lidechi.github.io"
   # 不公开源码仓库：不设 repo-url / repo-actions，避免「查看代码」与 GitHub 入口
   favicon: "assets/favicon.svg"
   search: true
